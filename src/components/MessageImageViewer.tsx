@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Download, Maximize2 } from "lucide-react";
+import { Download, Image as ImageIcon, Maximize2 } from "lucide-react";
 import { MessageArtwork } from "./MessageArtwork";
 import { WaButton } from "./chrome";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "./ui/dialog";
-import { downloadShareImage, prepareShareImage, shareToWhatsApp } from "@/lib/share";
+import { downloadShareImage, prepareShareImage, shareImageOnly, shareToWhatsApp } from "@/lib/share";
 import type { Message } from "@/lib/messages";
 import { Link } from "@tanstack/react-router";
 
@@ -14,6 +14,10 @@ export function DownloadImageButton({ m }: { m: Message }) {
     setBusy(true);
     try { await downloadShareImage(m); } finally { setBusy(false); }
   }}><Download />{busy ? "Preparando imagem…" : "Baixar imagem"}</Button>;
+}
+
+export function ShareImageOnlyButton({ m }: { m: Message }) {
+  return <Button variant="outline" className="h-12 w-full rounded-full text-base" onClick={() => void shareImageOnly(m)}><ImageIcon />Compartilhar só a imagem</Button>;
 }
 
 export function MessageImageViewer({ m, locked }: { m: Message; locked: boolean }) {
@@ -33,6 +37,7 @@ export function MessageImageViewer({ m, locked }: { m: Message; locked: boolean 
       <div className="shrink-0 space-y-2">
         {locked ? <Button asChild className="h-12 w-full"><Link to="/vip">Desbloquear com VIP</Link></Button> : <>
           <WaButton icon="wa" onClick={() => void shareToWhatsApp(m)}>Compartilhar no WhatsApp</WaButton>
+          <ShareImageOnlyButton m={m} />
           <DownloadImageButton m={m} />
         </>}
       </div>

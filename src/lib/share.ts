@@ -139,6 +139,23 @@ export async function downloadShareImage(m: Message): Promise<boolean> {
   }
 }
 
+/** Shares only the artwork, without the caption text. */
+export async function shareImageOnly(m: Message): Promise<void> {
+  const file = readyFiles.get(m.id);
+  if (file && navigator.share && navigator.canShare?.({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file] });
+      recordShare(m.id);
+      return;
+    } catch (e) {
+      if (e instanceof DOMException && e.name === "AbortError") return;
+    }
+  }
+  if (await downloadShareImage(m)) {
+    toast.success("Imagem baixada!", { description: "Abra o WhatsApp e anexe a imagem na conversa ou no Status 💚", duration: 9000 });
+  }
+}
+
 export async function shareToWhatsApp(m: Message): Promise<void> {
   const text = shareText(m);
   const file = readyFiles.get(m.id);

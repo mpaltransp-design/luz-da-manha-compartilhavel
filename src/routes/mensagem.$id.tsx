@@ -3,7 +3,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
 import { CopyIcon, HeartIcon, LockIcon } from "@/components/icons";
-import { DownloadImageButton, MessageImageViewer } from "@/components/MessageImageViewer";
+import { DownloadImageButton, ShareImageOnlyButton, MessageImageViewer } from "@/components/MessageImageViewer";
 import { PrayerDownloadButton, PrayerPlayer, PrayerShareButton } from "@/components/PrayerPlayer";
 import { categoryById, getMessage, isLocked, photoOf, relatedMessages } from "@/lib/messages";
 import { copyCaption, shareToWhatsApp } from "@/lib/share";
@@ -100,7 +100,7 @@ function Detail() {
               Compartilhar no WhatsApp
             </WaButton>
           )}
-          {!locked && <div className="mt-3"><DownloadImageButton m={m} /></div>}
+          {!locked && <div className="mt-3 space-y-2"><ShareImageOnlyButton m={m} /><DownloadImageButton m={m} /></div>}
           <div className="mt-3"><PrayerShareButton messageId={m.id} /></div>
         </div>
 
