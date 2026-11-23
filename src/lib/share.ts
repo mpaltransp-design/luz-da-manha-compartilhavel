@@ -1,4 +1,5 @@
 import { toast } from "sonner";
+import prayer from "@/assets/oracao-da-manha.mp3.asset.json";
 import { photoOf, shareText, type Message } from "./messages";
 import { recordShare } from "./store";
 import { artworkGreeting } from "./artwork";
@@ -158,6 +159,71 @@ export async function shareToWhatsApp(m: Message): Promise<void> {
   if (await downloadShareImage(m)) {
     toast.success("Imagem baixada!", {
       description: "Anexe a imagem na conversa do WhatsApp. Se o WhatsApp estiver bloqueado aqui, teste no site publicado.",
+      duration: 9000,
+    });
+  }
+}
+
+// Prayer audio ---------------------------------------------------------------
+let prayerFile: File | null = null;
+let prayerPending: Promise<File> | null = null;
+
+/** Fetches and caches the prayer audio before the click, keeping the user gesture. */
+export function preparePrayerAudio(): Promise<File> {
+  if (prayerFile) return Promise.resolve(prayerFile);
+  if (prayerPending) return prayerPending;
+  const task = fetch(prayer.url)
+    .then((r) => {
+      if (!r.ok) throw new Error("Falha ao carregar o áudio");
+      return r.blob();
+    })
+    .then((b) => {
+      prayerFile = new File([b], "oracao-da-manha.mp3", { type: "audio/mpeg" });
+      return prayerFile;
+    })
+    .finally(() => {
+      prayerPending = null;
+    });
+  prayerPending = task;
+  return task;
+}
+
+export async function downloadPrayerAudio(): Promise<boolean> {
+  try {
+    const file = await preparePrayerAudio();
+    const url = URL.createObjectURL(file);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = file.name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 60_000);
+    return true;
+  } catch {
+    toast.error("Não foi possível baixar a oração. Tente novamente.");
+    return false;
+  }
+}
+
+/** VIP perk: sends the 1-minute prayer as an audio attachment, or downloads it to attach manually. */
+export async function sharePrayerAudio(): Promise<void> {
+  const file = prayerFile;
+  const text = "🙏 Oração da Manhã · 1 minuto — Mensagens do Dia";
+  if (file && navigator.share && navigator.canShare?.({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file], text });
+      return;
+    } catch (e) {
+      if (e instanceof DOMException && e.name === "AbortError") return;
+      toast.error("Não foi possível compartilhar. Baixe o áudio e anexe no WhatsApp.");
+      return;
+    }
+  }
+  // WhatsApp links can't carry audio; download it so the user can attach it.
+  if (await downloadPrayerAudio()) {
+    toast.success("Oração baixada!", {
+      description: "Anexe o áudio na conversa do WhatsApp e envie para abençoar alguém 🙏",
       duration: 9000,
     });
   }

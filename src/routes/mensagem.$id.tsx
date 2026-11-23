@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
 import { CopyIcon, HeartIcon, LockIcon } from "@/components/icons";
 import { DownloadImageButton, MessageImageViewer } from "@/components/MessageImageViewer";
-import { PrayerDownloadButton, PrayerPlayer } from "@/components/PrayerPlayer";
+import { PrayerDownloadButton, PrayerPlayer, PrayerShareButton } from "@/components/PrayerPlayer";
 import { categoryById, getMessage, isLocked, photoOf, relatedMessages } from "@/lib/messages";
 import { copyCaption, shareToWhatsApp } from "@/lib/share";
 import { toggleFavorite, useFavorites, useVip } from "@/lib/store";
@@ -101,6 +101,7 @@ function Detail() {
             </WaButton>
           )}
           {!locked && <div className="mt-3"><DownloadImageButton m={m} /></div>}
+          <div className="mt-3"><PrayerShareButton /></div>
         </div>
 
         <SectionTitle className="mt-8">{cat.related}</SectionTitle>

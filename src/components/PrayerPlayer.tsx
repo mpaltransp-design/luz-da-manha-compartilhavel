@@ -1,9 +1,10 @@
-import { useNavigate } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
 import { Download } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import prayer from "@/assets/oracao-da-manha.mp3.asset.json";
-import { LockIcon, PauseIcon, PlayIcon } from "./icons";
+import { downloadPrayerAudio, preparePrayerAudio, sharePrayerAudio } from "@/lib/share";
+import { HeadphonesIcon, LockIcon, PauseIcon, PlayIcon } from "./icons";
 import { useVip } from "@/lib/store";
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
@@ -77,15 +78,14 @@ export function PrayerPlayer() {
 /** VIP-only button that downloads the 1-minute prayer audio as an .mp3 file. */
 export function PrayerDownloadButton() {
   const vip = useVip();
-  const [blob, setBlob] = useState<Blob | null>(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     if (!vip) return;
     let alive = true;
-    fetch(prayer.url)
-      .then((r) => r.blob())
-      .then((b) => {
-        if (alive) setBlob(b);
+    preparePrayerAudio()
+      .then(() => {
+        if (alive) setReady(true);
       })
       .catch(() => {});
     return () => {
@@ -96,28 +96,56 @@ export function PrayerDownloadButton() {
   if (!vip) return null;
 
   const download = () => {
-    if (!blob) return;
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "oracao-da-manha.mp3";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 30_000);
-    toast.success("Oração baixada! Envie no WhatsApp 🙏");
+    void downloadPrayerAudio().then((ok) => {
+      if (ok) toast.success("Oração baixada! Envie no WhatsApp 🙏");
+    });
   };
 
   return (
     <button
       type="button"
       onClick={download}
-      disabled={!blob}
+      disabled={!ready}
       aria-label="Baixar oração em áudio"
       title="Baixar oração em áudio"
       className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-full bg-white text-ink-muted transition-transform active:scale-90 disabled:opacity-50"
     >
       <Download size={20} />
+    </button>
+  );
+}
+
+/**
+ * Wide button that shares the 1-minute prayer audio on WhatsApp.
+ * Free users see a locked teaser that leads to the VIP offer.
+ */
+export function PrayerShareButton() {
+  const vip = useVip();
+
+  useEffect(() => {
+    if (!vip) return;
+    void preparePrayerAudio().catch(() => {});
+  }, [vip]);
+
+  if (!vip) {
+    return (
+      <Link
+        to="/vip"
+        className="flex h-[56px] items-center justify-center gap-2 rounded-full border border-gold bg-white text-[16px] font-bold text-gold"
+      >
+        <LockIcon size={18} /> Compartilhar Oração em Áudio
+        <span className="rounded-full bg-gold px-2 py-0.5 text-[11px] font-bold text-white">VIP</span>
+      </Link>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => void sharePrayerAudio()}
+      className="flex h-[56px] w-full items-center justify-center gap-2 rounded-full bg-gold text-[16px] font-bold text-white transition-transform active:scale-[0.98]"
+    >
+      <HeadphonesIcon size={20} /> Compartilhar Oração em Áudio
     </button>
   );
 }
