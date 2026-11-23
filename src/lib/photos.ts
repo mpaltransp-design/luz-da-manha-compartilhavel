@@ -44,6 +44,24 @@ import balloons from "@/assets/photos/balloons.jpg.asset.json";
 import feather from "@/assets/photos/feather.jpg.asset.json";
 import sunrays from "@/assets/photos/sunrays.jpg.asset.json";
 
+import sprout from "@/assets/photos/sprout.jpg.asset.json";
+import tulips from "@/assets/photos/tulips.jpg.asset.json";
+import chamomile from "@/assets/photos/chamomile.jpg.asset.json";
+import springwater from "@/assets/photos/springwater.jpg.asset.json";
+import olivetree from "@/assets/photos/olivetree.jpg.asset.json";
+import teacups from "@/assets/photos/teacups.jpg.asset.json";
+import chairs from "@/assets/photos/chairs.jpg.asset.json";
+import basket from "@/assets/photos/basket.jpg.asset.json";
+import perfume from "@/assets/photos/perfume.jpg.asset.json";
+import rooftops from "@/assets/photos/rooftops.jpg.asset.json";
+import fern from "@/assets/photos/fern.jpg.asset.json";
+import fruits from "@/assets/photos/fruits.jpg.asset.json";
+import chapel from "@/assets/photos/chapel.jpg.asset.json";
+import haybales from "@/assets/photos/haybales.jpg.asset.json";
+import desk from "@/assets/photos/desk.jpg.asset.json";
+import pottery from "@/assets/photos/pottery.jpg.asset.json";
+import bread from "@/assets/photos/bread.jpg.asset.json";
+
 export const photos = {
   beach: beach.url,
   walkway: walkway.url,
@@ -90,6 +108,23 @@ export const photos = {
   balloons: balloons.url,
   feather: feather.url,
   sunrays: sunrays.url,
+  sprout: sprout.url,
+  tulips: tulips.url,
+  chamomile: chamomile.url,
+  springwater: springwater.url,
+  olivetree: olivetree.url,
+  teacups: teacups.url,
+  chairs: chairs.url,
+  basket: basket.url,
+  perfume: perfume.url,
+  rooftops: rooftops.url,
+  fern: fern.url,
+  fruits: fruits.url,
+  chapel: chapel.url,
+  haybales: haybales.url,
+  desk: desk.url,
+  pottery: pottery.url,
+  bread: bread.url,
 };
 
 export type PhotoKey = keyof typeof photos;

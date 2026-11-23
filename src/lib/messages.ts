@@ -10,7 +10,11 @@ export type CategoryId =
   | "conforto"
   | "aniversario"
   | "protecao"
-  | "familia";
+  | "familia"
+  | "cura"
+  | "amizade"
+  | "semana"
+  | "trabalho";
 
 export type Category = {
   id: CategoryId;
@@ -31,8 +35,12 @@ export const categories: Category[] = [
   { id: "boa-noite", label: "Boa Noite", heading: "Mensagem de Boa Noite", related: "Mais mensagens de Boa Noite", vip: false },
   { id: "conforto", label: "Conforto & Luto", heading: "Mensagem de Conforto", related: "Mais palavras de Conforto", vip: true },
   { id: "aniversario", label: "Aniversário", heading: "Mensagem de Aniversário", related: "Mais mensagens de Aniversário", vip: true },
-  { id: "protecao", label: "Proteção", heading: "Mensagem de Proteção", related: "Mais sobre Proteção e Livramento", vip: false },
+  { id: "protecao", label: "Proteção & Livramento", heading: "Mensagem de Proteção", related: "Mais sobre Proteção e Livramento", vip: true },
   { id: "familia", label: "Família & Filhos", heading: "Oração pela Família", related: "Mais orações pela Família", vip: true },
+  { id: "cura", label: "Cura, Saúde & Força", heading: "Oração por Cura", related: "Mais orações por Saúde e Força", vip: true },
+  { id: "amizade", label: "Amizade & Irmãos na Fé", heading: "Mensagem de Amizade", related: "Mais mensagens para Amigos", vip: true },
+  { id: "semana", label: "Dias da Semana", heading: "Mensagem do Dia", related: "Mais mensagens da Semana", vip: true },
+  { id: "trabalho", label: "Trabalho & Provisão", heading: "Oração pelo Trabalho", related: "Mais sobre Trabalho e Provisão", vip: true },
 ];
 
 /** Chips on the home screen, in order. "todas" shows everything. */
@@ -44,6 +52,10 @@ export const homeChips: Array<CategoryId | "todas"> = [
   "paz",
   "protecao",
   "familia",
+  "cura",
+  "trabalho",
+  "amizade",
+  "semana",
   "conforto",
 ];
 
@@ -104,6 +116,23 @@ export const messages: Message[] = [
   { id: "aniversario-alegria", title: "Ano de alegria", category: "aniversario", verse: "Coroas o ano com a tua bondade, e as tuas veredas destilam fartura.", reference: "Salmos 65:11", caption: "Parabéns! 🎈✨ Que Deus coroe seu novo ano com bondade e fartura. Muitas felicidades e um dia lindo! 🌼", photo: "balloons", baseShares: 1422 },
   { id: "conforto-saudade", title: "Consolo na saudade", category: "conforto", verse: "Ele sara os quebrantados de coração, e lhes ata as suas feridas.", reference: "Salmos 147:3", caption: "Sei que a saudade aperta 🤍 Que Deus cuide do seu coração e transforme a dor em lembranças de amor. Estou com você. 🕊️", photo: "feather", baseShares: 1064 },
   { id: "conforto-refugio", title: "Refúgio e fortaleza", category: "conforto", verse: "Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.", reference: "Salmos 46:1", caption: "Nos dias difíceis, Deus é o nosso refúgio 🌅 Que Ele te dê forças e esperança. Um abraço carinhoso. 🤍", photo: "sunrays", baseShares: 948 },
+  {"id": "forca-ao-cansado", "title": "Força para o cansado", "category": "cura", "verse": "Dá força ao cansado e multiplica as forças ao que não tem nenhum vigor.", "reference": "Isaías 40:29", "caption": "Bom dia! 🌱 Se hoje o cansaço apertar, lembre: Deus renova as suas forças. Ele te sustenta em cada passo! 💛", "photo": "sprout", "baseShares": 1388},
+  {"id": "cura-me-senhor", "title": "Cura-me, Senhor", "category": "cura", "verse": "Cura-me, Senhor, e serei curado; salva-me, e serei salvo; porque tu és o meu louvor.", "reference": "Jeremias 17:14", "caption": "Hoje oro pela sua saúde 🌷 Que o Senhor toque seu corpo e seu coração, trazendo cura, alívio e paz. Fica bem! 🙏", "photo": "tulips", "baseShares": 1611},
+  {"id": "bendize-minha-alma", "title": "Bendize, ó minha alma", "category": "cura", "verse": "Bendize, ó minha alma, ao Senhor, e não te esqueças de nenhum de seus benefícios. É ele que perdoa todas as tuas iniquidades, que sara todas as tuas enfermidades.", "reference": "Salmos 103:2-3", "caption": "Bom dia! 🌼 Agradeço a Deus pela saúde de cada dia e peço que Ele sare todas as suas enfermidades. Deus cuida de você! 💛", "photo": "chamomile", "baseShares": 1274},
+  {"id": "clamei-e-me-saraste", "title": "Clamei e me saraste", "category": "cura", "verse": "Senhor, meu Deus, clamei a ti, e tu me saraste.", "reference": "Salmos 30:2", "caption": "Deus ouve o seu clamor 💧 Que Ele renove sua saúde como água fresca na alma. Força e fé hoje e sempre! 🙏", "photo": "springwater", "baseShares": 1157},
+  {"id": "anjo-acampa-ao-redor", "title": "O anjo acampa ao redor", "category": "protecao", "verse": "O anjo do Senhor acampa-se ao redor dos que o temem, e os livra.", "reference": "Salmos 34:7", "caption": "Bom dia! 🫒 Os anjos do Senhor estão acampados ao redor da sua casa. Pode sair em paz, você está guardado! 🙏", "photo": "olivetree", "baseShares": 1702},
+  {"id": "amigo-em-todo-tempo", "title": "Amigo em todo tempo", "category": "amizade", "verse": "Em todo o tempo ama o amigo, e na angústia nasce o irmão.", "reference": "Provérbios 17:17", "caption": "Bom dia, amiga querida! ☕🌸 Obrigada por estar comigo nos dias bons e nos difíceis. Deus abençoe nossa amizade! 💛", "photo": "teacups", "baseShares": 1495},
+  {"id": "melhor-sao-dois", "title": "Melhor são dois", "category": "amizade", "verse": "Melhor é serem dois do que um… porque se um cair, o outro levanta o seu companheiro.", "reference": "Eclesiastes 4:9-10", "caption": "Que bom caminhar com você na fé! 🌅 Quando um cai, o outro levanta. Deus abençoe nossa caminhada juntos! 🤝", "photo": "chairs", "baseShares": 1333},
+  {"id": "edificai-uns-aos-outros", "title": "Edificai-vos uns aos outros", "category": "amizade", "verse": "Exortai-vos uns aos outros e edificai-vos uns aos outros, como também o fazeis.", "reference": "1 Tessalonicenses 5:11", "caption": "Passando pra te dar um abraço de fé 🧺🌼 Você é bênção na minha vida. Vamos seguir firmes, juntos em Cristo! 💛", "photo": "basket", "baseShares": 1188},
+  {"id": "perfume-da-amizade", "title": "O perfume da amizade", "category": "amizade", "verse": "O óleo e o perfume alegram o coração; assim o faz a doçura do amigo com o seu conselho cordial.", "reference": "Provérbios 27:9", "caption": "Sua amizade é perfume na minha vida 🌹 Obrigada pelos conselhos e pelo carinho. Deus te abençoe muito hoje! ✨", "photo": "perfume", "baseShares": 1067},
+  {"id": "segunda-de-vitorias", "title": "Segunda-feira de vitórias", "category": "semana", "verse": "Este é o dia que fez o Senhor; regozijemo-nos e alegremo-nos nele.", "reference": "Salmos 118:24", "caption": "Bom dia e boa segunda-feira! ☀️ Que esta semana comece com Deus no comando e termine com muitas vitórias! 🙌", "photo": "rooftops", "baseShares": 1890},
+  {"id": "quarta-de-descanso", "title": "Quarta-feira de renovo", "category": "semana", "verse": "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.", "reference": "Mateus 11:28", "caption": "Boa quarta-feira! 🌿 Metade da semana já passou. Respire fundo, descanse em Deus e siga com fé! 💛", "photo": "fern", "baseShares": 1244},
+  {"id": "sexta-de-gratidao", "title": "Sexta-feira de gratidão", "category": "semana", "verse": "Louvai ao Senhor, porque ele é bom, porque a sua benignidade dura para sempre.", "reference": "Salmos 107:1", "caption": "Sextou com gratidão! 🍇🍊 Obrigada, Senhor, por cada bênção desta semana. Boa sexta-feira e ótimo fim de semana! 🙏", "photo": "fruits", "baseShares": 1532},
+  {"id": "domingo-na-casa-do-senhor", "title": "Domingo na casa do Senhor", "category": "semana", "verse": "Alegrei-me quando me disseram: Vamos à casa do Senhor.", "reference": "Salmos 122:1", "caption": "Feliz domingo! ⛪🌸 Que hoje a sua casa se encha da presença de Deus e o seu coração de paz. Bom domingo, família! 💛", "photo": "chapel", "baseShares": 1416},
+  {"id": "deus-supre-tudo", "title": "Deus supre tudo", "category": "trabalho", "verse": "O meu Deus, segundo as suas riquezas, suprirá todas as vossas necessidades em glória, por Cristo Jesus.", "reference": "Filipenses 4:19", "caption": "Bom dia! 🌾 Não se preocupe: Deus vai suprir cada necessidade da sua casa. Ele é fiel e nunca falha! 🙏", "photo": "haybales", "baseShares": 1777},
+  {"id": "confia-ao-senhor-tuas-obras", "title": "Confia ao Senhor tuas obras", "category": "trabalho", "verse": "Confia ao Senhor as tuas obras, e os teus planos serão estabelecidos.", "reference": "Provérbios 16:3", "caption": "Bom dia e bom trabalho! 📖☕ Entregue seus planos a Deus hoje, e Ele vai firmar cada passo seu! 💛", "photo": "desk", "baseShares": 1299},
+  {"id": "obra-das-nossas-maos", "title": "A obra das nossas mãos", "category": "trabalho", "verse": "Seja sobre nós a graça do Senhor, nosso Deus; e confirma sobre nós a obra das nossas mãos.", "reference": "Salmos 90:17", "caption": "Que Deus abençoe o trabalho das suas mãos hoje 🙌 Tudo que você fizer vai prosperar! Bom dia e bom trabalho! ✨", "photo": "pottery", "baseShares": 1163},
+  {"id": "bencao-nos-celeiros", "title": "Bênção nos celeiros", "category": "trabalho", "verse": "O Senhor mandará que a bênção esteja contigo nos teus celeiros e em tudo o que puseres a tua mão.", "reference": "Deuteronômio 28:8", "caption": "Declaro bênção sobre sua casa 🍞🌾 Que nunca falte pão na mesa e que tudo o que você tocar prospere! Bom dia! 🙏", "photo": "bread", "baseShares": 1455},
 ];
 
 export const categoryById = (id: CategoryId) =>
