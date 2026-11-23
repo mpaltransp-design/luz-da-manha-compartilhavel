@@ -1,6 +1,7 @@
 import { toast } from "sonner";
 import { photoOf, shareText, type Message } from "./messages";
 import { recordShare } from "./store";
+import { artworkGreeting } from "./artwork";
 
 const W = 1080;
 const H = 1350;
@@ -41,6 +42,11 @@ export async function renderShareImage(m: Message): Promise<Blob | null> {
     /* fall back to system serif */
   }
   const img = await loadImage(photoOf(m));
+  const colors = getComputedStyle(document.documentElement);
+  const cream = colors.getPropertyValue("--cream").trim();
+  const ink = colors.getPropertyValue("--ink").trim();
+  const muted = colors.getPropertyValue("--ink-muted").trim();
+  const gold = colors.getPropertyValue("--gold").trim();
   const canvas = document.createElement("canvas");
   canvas.width = W;
   canvas.height = H;
@@ -51,29 +57,37 @@ export async function renderShareImage(m: Message): Promise<Blob | null> {
   const dh = img.height * scale;
   ctx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
 
-  const g = ctx.createLinearGradient(0, 0, 0, H * 0.72);
-  g.addColorStop(0, "rgba(253,247,239,0.94)");
-  g.addColorStop(0.6, "rgba(253,247,239,0.72)");
-  g.addColorStop(1, "rgba(253,247,239,0)");
+  const g = ctx.createLinearGradient(0, 0, 0, H * 0.9);
+  g.addColorStop(0, cream);
+  g.addColorStop(0.65, cream);
+  g.addColorStop(1, "transparent");
+  ctx.globalAlpha = 0.88;
   ctx.fillStyle = g;
   ctx.fillRect(0, 0, W, H);
+  ctx.globalAlpha = 1;
 
   ctx.textAlign = "center";
-  ctx.fillStyle = "#3b2a22";
+  const greeting = artworkGreeting(m);
+  if (greeting) {
+    ctx.fillStyle = gold;
+    ctx.font = '600 76px Lora, Georgia, serif';
+    ctx.fillText(greeting, W / 2, 155);
+  }
+  ctx.fillStyle = ink;
   const size = m.verse.length > 110 ? 54 : m.verse.length > 70 ? 62 : 70;
   ctx.font = `600 ${size}px Lora, Georgia, serif`;
   const lines = wrap(ctx, `“${m.verse}”`, W - 180);
-  let y = 200;
+  let y = greeting ? 270 : 200;
   for (const l of lines) {
     ctx.fillText(l, W / 2, y);
     y += size * 1.3;
   }
   ctx.font = "italic 500 40px Lora, Georgia, serif";
-  ctx.fillStyle = "#7a6457";
+  ctx.fillStyle = muted;
   ctx.fillText(m.reference, W / 2, y + 30);
 
   ctx.font = "700 30px 'Nunito Sans', sans-serif";
-  ctx.fillStyle = "rgba(253,247,239,0.95)";
+  ctx.fillStyle = cream;
   ctx.fillText("☀ Mensagens do Dia", W / 2, H - 60);
 
   return new Promise((resolve) => canvas.toBlob((b) => resolve(b), "image/jpeg", 0.9));
@@ -83,38 +97,70 @@ export function whatsappUrl(text: string): string {
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
 
-/**
- * Shares the message to WhatsApp. On phones it uses the system share sheet with the
- * picture and the text; elsewhere it opens WhatsApp with the text ready to send.
- */
+const readyFiles = new Map<string, File>();
+const pendingFiles = new Map<string, Promise<File>>();
+
+/** Prepares before the click so native sharing retains the browser's user gesture. */
+export function prepareShareImage(m: Message): Promise<File> {
+  const ready = readyFiles.get(m.id);
+  if (ready) return Promise.resolve(ready);
+  const pending = pendingFiles.get(m.id);
+  if (pending) return pending;
+  const task = renderShareImage(m).then((blob) => {
+    if (!blob) throw new Error("Não foi possível gerar a imagem");
+    const file = new File([blob], `${m.id}.jpg`, { type: "image/jpeg" });
+    if (readyFiles.size >= 8) {
+      const oldest = readyFiles.keys().next().value;
+      if (oldest) readyFiles.delete(oldest);
+    }
+    readyFiles.set(m.id, file);
+    return file;
+  }).finally(() => pendingFiles.delete(m.id));
+  pendingFiles.set(m.id, task);
+  return task;
+}
+
+export async function downloadShareImage(m: Message): Promise<boolean> {
+  try {
+    const file = await prepareShareImage(m);
+    const url = URL.createObjectURL(file);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = file.name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 60_000);
+    return true;
+  } catch {
+    toast.error("Não foi possível baixar a imagem. Tente novamente.");
+    return false;
+  }
+}
+
 export async function shareToWhatsApp(m: Message): Promise<void> {
   const text = shareText(m);
-  const nav = typeof navigator !== "undefined" ? navigator : undefined;
-  const isTouch = typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches;
-
-  if (nav?.share && isTouch) {
+  const file = readyFiles.get(m.id);
+  if (file && navigator.share && navigator.canShare?.({ files: [file] })) {
     try {
-      const blob = await renderShareImage(m);
-      if (blob) {
-        const file = new File([blob], `${m.id}.jpg`, { type: "image/jpeg" });
-        if (nav.canShare?.({ files: [file] })) {
-          await nav.share({ files: [file], text });
-          recordShare(m.id);
-          return;
-        }
-      }
-      await nav.share({ text });
+      await navigator.share({ files: [file], text });
       recordShare(m.id);
       return;
     } catch (e) {
       if (e instanceof DOMException && e.name === "AbortError") return;
-      /* fall through to the WhatsApp link */
+      toast.error("Não foi possível compartilhar. Use Baixar imagem e anexe no WhatsApp.");
+      return;
     }
   }
-
-  const win = window.open(whatsappUrl(text), "_blank", "noopener");
-  if (!win) window.location.href = whatsappUrl(text);
-  recordShare(m.id);
+  // A WhatsApp URL only carries text, never an attachment. Keep the working link;
+  // download the artwork separately and never navigate the preview iframe away.
+  window.open(whatsappUrl(text), "_blank", "noopener");
+  if (await downloadShareImage(m)) {
+    toast.success("Imagem baixada!", {
+      description: "Anexe a imagem na conversa do WhatsApp. Se o WhatsApp estiver bloqueado aqui, teste no site publicado.",
+      duration: 9000,
+    });
+  }
 }
 
 export async function copyCaption(m: Message): Promise<void> {

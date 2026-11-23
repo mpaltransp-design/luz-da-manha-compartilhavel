@@ -8,6 +8,7 @@ import { categoryById, filterMessages, homeChips, messageOfTheDay, photoOf, type
 import { shareToWhatsApp } from "@/lib/share";
 import { useName, useVip } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import { artworkGreeting } from "@/lib/artwork";
 
 const chipIds = ["todas", "bom-dia", "versiculos", "bencaos", "paz", "gratidao", "boa-noite", "conforto", "aniversario"] as const;
 
@@ -90,6 +91,7 @@ function Home() {
               <span className="absolute inset-0 bg-gradient-to-b from-peach-soft/95 via-peach-soft/70 to-transparent" />
               <span className="absolute inset-x-0 top-0 p-5">
                 <span className="block text-[12px] font-bold uppercase tracking-[0.15em] text-gold">Mensagem do dia</span>
+                {artworkGreeting(daily) && <span className="serif mt-2 block text-[26px] font-semibold text-gold">{artworkGreeting(daily)}</span>}
                 <span className="serif mt-2 block text-[21px] font-medium leading-[29px] text-ink">“{daily.verse}”</span>
                 <span className="serif mt-2 block text-[17px] font-semibold italic text-gold">{daily.reference}</span>
               </span>

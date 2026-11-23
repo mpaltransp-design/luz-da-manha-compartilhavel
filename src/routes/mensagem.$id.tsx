@@ -2,7 +2,8 @@ import type React from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
-import { CopyIcon, HeartIcon, LockIcon, ShareUpIcon, SunIcon } from "@/components/icons";
+import { CopyIcon, HeartIcon, LockIcon, ShareUpIcon } from "@/components/icons";
+import { DownloadImageButton, MessageImageViewer } from "@/components/MessageImageViewer";
 import { PrayerPlayer } from "@/components/PrayerPlayer";
 import { categoryById, getMessage, isLocked, photoOf, relatedMessages } from "@/lib/messages";
 import { copyCaption, shareToWhatsApp } from "@/lib/share";
@@ -44,7 +45,8 @@ export const Route = createFileRoute("/mensagem/$id")({
 
 function Detail() {
   const { id } = Route.useLoaderData();
-  const m = getMessage(id)!;
+  const m = getMessage(id);
+  if (!m) throw notFound();
   const cat = categoryById(m.category);
   const vip = useVip();
   const favs = useFavorites();
@@ -62,20 +64,7 @@ function Detail() {
       <AppHeader back title={cat.heading} subtitle={m.reference} />
       <Container className="px-5">
         <div className="md:mx-auto md:max-w-[480px]">
-          <div className="relative mt-2 aspect-[4/5] overflow-hidden rounded-[var(--r-card)] shadow-sun">
-            <img src={photoOf(m)} alt="" className="h-full w-full object-cover object-bottom" />
-            <div className="absolute inset-0 bg-gradient-to-b from-cream/95 via-cream/70 via-45% to-transparent" />
-            <div className="absolute inset-x-0 top-0 flex flex-col items-center px-7 pt-9 text-center">
-              <SunIcon size={24} className="text-gold" />
-              <p className="serif mt-4 text-[25px] font-semibold leading-[32px] text-ink">“{m.verse}”</p>
-              <p className="serif mt-3 text-[16px] italic text-ink-muted">{m.reference}</p>
-            </div>
-            {locked && (
-              <Link to="/vip" className="absolute inset-x-4 bottom-4 flex items-center justify-center gap-2 rounded-[16px] bg-cream/95 py-3 font-bold text-gold">
-                <LockIcon size={18} /> Exclusivo VIP — desbloquear
-              </Link>
-            )}
-          </div>
+          <MessageImageViewer m={m} locked={locked} />
 
           <div className="mt-5 flex items-center gap-1.5 rounded-full bg-peach-soft p-2">
             <button
@@ -114,6 +103,7 @@ function Detail() {
               Compartilhar no WhatsApp
             </WaButton>
           )}
+          {!locked && <div className="mt-3"><DownloadImageButton m={m} /></div>}
         </div>
 
         <SectionTitle className="mt-8">{cat.related}</SectionTitle>

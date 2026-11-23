@@ -3,6 +3,7 @@ import { ChatIcon, LockIcon } from "./icons";
 import { isLocked, photoOf, type Message } from "@/lib/messages";
 import { shareToWhatsApp } from "@/lib/share";
 import { useVip } from "@/lib/store";
+import { artworkGreeting } from "@/lib/artwork";
 
 export function MessageTile({ m }: { m: Message }) {
   const vip = useVip();
@@ -33,6 +34,7 @@ export function MessageTile({ m }: { m: Message }) {
         )}
         </Link>
       )}
+      {artworkGreeting(m) && <span className="serif pointer-events-none absolute inset-x-3 top-12 text-center text-[22px] font-semibold text-primary-foreground drop-shadow-md">{artworkGreeting(m)}</span>}
       <button
         type="button"
         aria-label={locked ? "Desbloquear com VIP" : `Compartilhar “${m.title}” no WhatsApp`}
