@@ -81,6 +81,58 @@ import starrynight from "@/assets/photos/starrynight.jpg.asset.json";
 import cozybed from "@/assets/photos/cozybed.jpg.asset.json";
 import moonlake from "@/assets/photos/moonlake.jpg.asset.json";
 import nightlantern from "@/assets/photos/nightlantern.jpg.asset.json";
+import sunrisewindow from "@/assets/photos/sunrisewindow.jpg.asset.json";
+import eaglesky from "@/assets/photos/eaglesky.jpg.asset.json";
+import wateringcan from "@/assets/photos/wateringcan.jpg.asset.json";
+import countrypath from "@/assets/photos/countrypath.jpg.asset.json";
+import teapotpour from "@/assets/photos/teapotpour.jpg.asset.json";
+import raindropsrose from "@/assets/photos/raindropsrose.jpg.asset.json";
+import greenvineyard from "@/assets/photos/greenvineyard.jpg.asset.json";
+import wildflowerjar from "@/assets/photos/wildflowerjar.jpg.asset.json";
+import whitedove from "@/assets/photos/whitedove.jpg.asset.json";
+import calmsea from "@/assets/photos/calmsea.jpg.asset.json";
+import oaktree from "@/assets/photos/oaktree.jpg.asset.json";
+import zenstones from "@/assets/photos/zenstones.jpg.asset.json";
+import hymnbook from "@/assets/photos/hymnbook.jpg.asset.json";
+import freshbread from "@/assets/photos/freshbread.jpg.asset.json";
+import sunflowerfield from "@/assets/photos/sunflowerfield.jpg.asset.json";
+import lemonade from "@/assets/photos/lemonade.jpg.asset.json";
+import nightcabin from "@/assets/photos/nightcabin.jpg.asset.json";
+import nighttea from "@/assets/photos/nighttea.jpg.asset.json";
+import nighthouse from "@/assets/photos/nighthouse.jpg.asset.json";
+import fullmoon from "@/assets/photos/fullmoon.jpg.asset.json";
+import mistyforest from "@/assets/photos/mistyforest.jpg.asset.json";
+import whitetulips from "@/assets/photos/whitetulips.jpg.asset.json";
+import sunrisecross from "@/assets/photos/sunrisecross.jpg.asset.json";
+import candlewindow from "@/assets/photos/candlewindow.jpg.asset.json";
+import cupcakes from "@/assets/photos/cupcakes.jpg.asset.json";
+import floralgiftbox from "@/assets/photos/floralgiftbox.jpg.asset.json";
+import bunting from "@/assets/photos/bunting.jpg.asset.json";
+import confetti from "@/assets/photos/confetti.jpg.asset.json";
+import stonetower from "@/assets/photos/stonetower.jpg.asset.json";
+import sunshield from "@/assets/photos/sunshield.jpg.asset.json";
+import mountainfortress from "@/assets/photos/mountainfortress.jpg.asset.json";
+import frontdoor from "@/assets/photos/frontdoor.jpg.asset.json";
+import familytable from "@/assets/photos/familytable.jpg.asset.json";
+import childbible from "@/assets/photos/childbible.jpg.asset.json";
+import rockingchair from "@/assets/photos/rockingchair.jpg.asset.json";
+import heartflowers from "@/assets/photos/heartflowers.jpg.asset.json";
+import healingherbs from "@/assets/photos/healingherbs.jpg.asset.json";
+import lilyvalley from "@/assets/photos/lilyvalley.jpg.asset.json";
+import seedlingcrack from "@/assets/photos/seedlingcrack.jpg.asset.json";
+import prayinghands from "@/assets/photos/prayinghands.jpg.asset.json";
+import twomugs from "@/assets/photos/twomugs.jpg.asset.json";
+import twobicycles from "@/assets/photos/twobicycles.jpg.asset.json";
+import joinedhands from "@/assets/photos/joinedhands.jpg.asset.json";
+import churchsteps from "@/assets/photos/churchsteps.jpg.asset.json";
+import tuesdaygarden from "@/assets/photos/tuesdaygarden.jpg.asset.json";
+import thursdaywindow from "@/assets/photos/thursdaywindow.jpg.asset.json";
+import saturdaypicnic from "@/assets/photos/saturdaypicnic.jpg.asset.json";
+import planner from "@/assets/photos/planner.jpg.asset.json";
+import workbench from "@/assets/photos/workbench.jpg.asset.json";
+import sewing from "@/assets/photos/sewing.jpg.asset.json";
+import archway from "@/assets/photos/archway.jpg.asset.json";
+import pantry from "@/assets/photos/pantry.jpg.asset.json";
 
 export const photos = {
   beach: beach.url,
@@ -165,6 +217,58 @@ export const photos = {
   cozybed: cozybed.url,
   moonlake: moonlake.url,
   nightlantern: nightlantern.url,
+  sunrisewindow: sunrisewindow.url,
+  eaglesky: eaglesky.url,
+  wateringcan: wateringcan.url,
+  countrypath: countrypath.url,
+  teapotpour: teapotpour.url,
+  raindropsrose: raindropsrose.url,
+  greenvineyard: greenvineyard.url,
+  wildflowerjar: wildflowerjar.url,
+  whitedove: whitedove.url,
+  calmsea: calmsea.url,
+  oaktree: oaktree.url,
+  zenstones: zenstones.url,
+  hymnbook: hymnbook.url,
+  freshbread: freshbread.url,
+  sunflowerfield: sunflowerfield.url,
+  lemonade: lemonade.url,
+  nightcabin: nightcabin.url,
+  nighttea: nighttea.url,
+  nighthouse: nighthouse.url,
+  fullmoon: fullmoon.url,
+  mistyforest: mistyforest.url,
+  whitetulips: whitetulips.url,
+  sunrisecross: sunrisecross.url,
+  candlewindow: candlewindow.url,
+  cupcakes: cupcakes.url,
+  floralgiftbox: floralgiftbox.url,
+  bunting: bunting.url,
+  confetti: confetti.url,
+  stonetower: stonetower.url,
+  sunshield: sunshield.url,
+  mountainfortress: mountainfortress.url,
+  frontdoor: frontdoor.url,
+  familytable: familytable.url,
+  childbible: childbible.url,
+  rockingchair: rockingchair.url,
+  heartflowers: heartflowers.url,
+  healingherbs: healingherbs.url,
+  lilyvalley: lilyvalley.url,
+  seedlingcrack: seedlingcrack.url,
+  prayinghands: prayinghands.url,
+  twomugs: twomugs.url,
+  twobicycles: twobicycles.url,
+  joinedhands: joinedhands.url,
+  churchsteps: churchsteps.url,
+  tuesdaygarden: tuesdaygarden.url,
+  thursdaywindow: thursdaywindow.url,
+  saturdaypicnic: saturdaypicnic.url,
+  planner: planner.url,
+  workbench: workbench.url,
+  sewing: sewing.url,
+  archway: archway.url,
+  pantry: pantry.url,
 };
 
 export type PhotoKey = keyof typeof photos;
