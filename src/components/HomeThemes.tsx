@@ -3,6 +3,7 @@ import { LockIcon } from "@/components/icons";
 import { categories, messages, photoOf, type CategoryId } from "@/lib/messages";
 import { cn } from "@/lib/utils";
 
+const counts = new Map(categories.map((c) => [c.id, messages.filter((m) => m.category === c.id).length]));
 const covers = new Map(categories.map((category) => [category.id, messages.find((message) => message.category === category.id)]));
 
 export function HomeThemes({ active, vip, onSelect }: {
@@ -13,7 +14,7 @@ export function HomeThemes({ active, vip, onSelect }: {
   return (
     <section aria-label="Temas" className="mx-auto w-full max-w-[560px] md:max-w-3xl">
       <div className="flex items-center justify-between px-5 pb-3">
-        <h2 className="serif text-[20px] font-semibold text-ink">Temas</h2>
+        <h2 className="serif text-[20px] font-semibold text-ink">Escolha um tema</h2>
         <Button variant="ghost" onClick={() => onSelect("todas")} aria-pressed={active === "todas"}
           className={cn("rounded-full text-[14px] font-bold", active === "todas" ? "bg-peach text-ink" : "text-ink-muted")}>
           Todas
@@ -34,7 +35,8 @@ export function HomeThemes({ active, vip, onSelect }: {
                   {locked && <LockIcon size={12} />} VIP
                 </span>}
               </span>
-              <span className="flex min-h-[42px] items-start justify-center text-center text-[15px] font-bold leading-[21px] text-ink">{category.label}</span>
+              <span className="flex items-start justify-center text-center text-[15px] font-bold leading-[21px] text-ink">{category.label}</span>
+              <span className="-mt-1.5 pb-1 text-[12px] font-semibold text-ink-muted">{counts.get(category.id)} mensagens</span>
             </Button>
           );
         })}
