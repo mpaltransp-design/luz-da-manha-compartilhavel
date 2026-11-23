@@ -1,12 +1,12 @@
 import type React from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
+import { AppHeader, Container, SectionTitle } from "@/components/chrome";
 import { CopyIcon, HeartIcon, LockIcon } from "@/components/icons";
-import { DownloadImageButton, ShareImageOnlyButton, MessageImageViewer } from "@/components/MessageImageViewer";
+import { DownloadImageButton, ShareImageAndMessageButton, ShareImageOnlyButton, MessageImageViewer } from "@/components/MessageImageViewer";
 import { PrayerDownloadButton, PrayerPlayer, PrayerShareButton } from "@/components/PrayerPlayer";
 import { categoryById, getMessage, isLocked, photoOf, relatedMessages } from "@/lib/messages";
-import { copyCaption, shareToWhatsApp } from "@/lib/share";
+import { copyCaption } from "@/lib/share";
 import { toggleFavorite, useFavorites, useVip } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -96,12 +96,9 @@ function Detail() {
               <LockIcon /> Desbloquear com VIP
             </Link>
           ) : (
-            <WaButton big icon="wa" className="mt-5" onClick={() => void shareToWhatsApp(m)}>
-              Compartilhar no WhatsApp
-            </WaButton>
+            <div className="mt-5 space-y-2"><ShareImageOnlyButton m={m} /><ShareImageAndMessageButton m={m} /><DownloadImageButton m={m} /></div>
           )}
-          {!locked && <div className="mt-3 space-y-2"><ShareImageOnlyButton m={m} /><DownloadImageButton m={m} /></div>}
-          <div className="mt-3"><PrayerShareButton messageId={m.id} /></div>
+          <div className="mt-2"><PrayerShareButton messageId={m.id} /></div>
         </div>
 
         <SectionTitle className="mt-8">{cat.related}</SectionTitle>

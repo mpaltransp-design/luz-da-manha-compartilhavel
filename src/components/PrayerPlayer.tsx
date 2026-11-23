@@ -139,10 +139,10 @@ export function PrayerShareButton({ messageId }: { messageId?: string }) {
     return (
       <Link
         to="/vip"
-        className="flex h-[56px] items-center justify-center gap-2 rounded-full border border-gold bg-white text-[16px] font-bold text-gold"
+        className="flex h-12 items-center justify-center gap-2 rounded-full bg-gold text-base font-bold text-white"
       >
         <LockIcon size={18} /> Compartilhar Oração em Áudio
-        <span className="rounded-full bg-gold px-2 py-0.5 text-[11px] font-bold text-white">VIP</span>
+        <span className="rounded-full bg-white px-2 py-0.5 text-[11px] font-bold text-gold">VIP</span>
       </Link>
     );
   }
@@ -151,7 +151,7 @@ export function PrayerShareButton({ messageId }: { messageId?: string }) {
     <button
       type="button"
       onClick={() => void sharePrayerAudio(messageId)}
-      className="flex h-[56px] w-full items-center justify-center gap-2 rounded-full bg-gold text-[16px] font-bold text-white transition-transform active:scale-[0.98]"
+      className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-gold text-base font-bold text-white transition-transform active:scale-[0.98]"
     >
       <HeadphonesIcon size={20} /> Compartilhar Oração em Áudio
     </button>

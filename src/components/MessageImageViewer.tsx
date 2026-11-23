@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Download, Image as ImageIcon, Maximize2 } from "lucide-react";
+import { Download, Maximize2 } from "lucide-react";
 import { MessageArtwork } from "./MessageArtwork";
 import { WaButton } from "./chrome";
 import { Button } from "./ui/button";
@@ -10,14 +10,18 @@ import { Link } from "@tanstack/react-router";
 
 export function DownloadImageButton({ m }: { m: Message }) {
   const [busy, setBusy] = useState(false);
-  return <Button variant="outline" disabled={busy} className="h-12 w-full rounded-full text-base" onClick={async () => {
+  return <Button disabled={busy} className="h-12 w-full rounded-full bg-gold text-base font-bold text-white hover:bg-gold/90" onClick={async () => {
     setBusy(true);
     try { await downloadShareImage(m); } finally { setBusy(false); }
   }}><Download />{busy ? "Preparando imagem…" : "Baixar imagem"}</Button>;
 }
 
 export function ShareImageOnlyButton({ m }: { m: Message }) {
-  return <Button variant="outline" className="h-12 w-full rounded-full text-base" onClick={() => void shareImageOnly(m)}><ImageIcon />Compartilhar só a imagem</Button>;
+  return <WaButton icon="wa" className="h-12 rounded-full text-base" onClick={() => void shareImageOnly(m)}>Compartilhar só a imagem</WaButton>;
+}
+
+export function ShareImageAndMessageButton({ m }: { m: Message }) {
+  return <WaButton icon="wa" className="h-12 rounded-full text-base" onClick={() => void shareToWhatsApp(m)}>Compartilhar imagem e mensagem</WaButton>;
 }
 
 export function MessageImageViewer({ m, locked }: { m: Message; locked: boolean }) {
@@ -36,8 +40,8 @@ export function MessageImageViewer({ m, locked }: { m: Message; locked: boolean 
       <div className="min-h-0 overflow-y-auto"><MessageArtwork m={m} className="mx-auto max-w-[520px]" /></div>
       <div className="shrink-0 space-y-2">
         {locked ? <Button asChild className="h-12 w-full"><Link to="/vip">Desbloquear com VIP</Link></Button> : <>
-          <WaButton icon="wa" onClick={() => void shareToWhatsApp(m)}>Compartilhar no WhatsApp</WaButton>
           <ShareImageOnlyButton m={m} />
+          <ShareImageAndMessageButton m={m} />
           <DownloadImageButton m={m} />
         </>}
       </div>
