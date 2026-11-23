@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "b175632a-52b1-45b8-a1e9-308cb7d7e27a",
+  "asset_id": "ad788eeb-b4c5-4974-a871-4c64a13ef27e",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/b175632a-52b1-45b8-a1e9-308cb7d7e27a/deus-supre-tudo.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/b175632a-52b1-45b8-a1e9-308cb7d7e27a/deus-supre-tudo.mp3",
-  "original_filename": "deus-supre-tudo.mp3",
-  "size": 143568,
+  "url": "/__l5e/assets-v1/ad788eeb-b4c5-4974-a871-4c64a13ef27e/oracao-deus-supre-tudo-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/ad788eeb-b4c5-4974-a871-4c64a13ef27e/oracao-deus-supre-tudo-v3.mp3",
+  "original_filename": "oracao-deus-supre-tudo-v3.mp3",
+  "size": 496896,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T02:59:42Z"
+  "created_at": "2026-11-23T04:07:47Z"
 }

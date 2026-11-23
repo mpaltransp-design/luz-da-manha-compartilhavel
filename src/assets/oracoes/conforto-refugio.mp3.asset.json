@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "af3e5561-3bd7-49b7-b165-709183553487",
+  "asset_id": "467af4a6-a8a4-4f63-86cf-73830146191a",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/af3e5561-3bd7-49b7-b165-709183553487/conforto-refugio.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/af3e5561-3bd7-49b7-b165-709183553487/conforto-refugio.mp3",
-  "original_filename": "conforto-refugio.mp3",
-  "size": 98928,
+  "url": "/__l5e/assets-v1/467af4a6-a8a4-4f63-86cf-73830146191a/oracao-conforto-refugio-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/467af4a6-a8a4-4f63-86cf-73830146191a/oracao-conforto-refugio-v3.mp3",
+  "original_filename": "oracao-conforto-refugio-v3.mp3",
+  "size": 467328,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T02:45:52Z"
+  "created_at": "2026-11-23T04:07:40Z"
 }

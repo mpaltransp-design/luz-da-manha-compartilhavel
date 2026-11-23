@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "9b168ecd-6509-491c-9e9b-89f4871100ee",
+  "asset_id": "76b31a43-4026-4b7a-9b6f-50deb3cc0241",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/9b168ecd-6509-491c-9e9b-89f4871100ee/oracao-flores-de-bom-dia.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/9b168ecd-6509-491c-9e9b-89f4871100ee/oracao-flores-de-bom-dia.mp3",
-  "original_filename": "oracao-flores-de-bom-dia.mp3",
-  "size": 356589,
+  "url": "/__l5e/assets-v1/76b31a43-4026-4b7a-9b6f-50deb3cc0241/oracao-flores-de-bom-dia-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/76b31a43-4026-4b7a-9b6f-50deb3cc0241/oracao-flores-de-bom-dia-v3.mp3",
+  "original_filename": "oracao-flores-de-bom-dia-v3.mp3",
+  "size": 400128,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T01:44:13Z"
+  "created_at": "2026-11-23T04:07:17Z"
 }

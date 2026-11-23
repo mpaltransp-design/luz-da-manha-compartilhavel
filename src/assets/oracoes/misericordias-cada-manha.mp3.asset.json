@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "ab52496e-727b-45ec-9369-e7fbe4069352",
+  "asset_id": "afce1e38-2b0e-4098-a9fb-4653a7017195",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/ab52496e-727b-45ec-9369-e7fbe4069352/oracao-misericordias-cada-manha.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/ab52496e-727b-45ec-9369-e7fbe4069352/oracao-misericordias-cada-manha.mp3",
-  "original_filename": "oracao-misericordias-cada-manha.mp3",
-  "size": 406413,
+  "url": "/__l5e/assets-v1/afce1e38-2b0e-4098-a9fb-4653a7017195/oracao-misericordias-cada-manha-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/afce1e38-2b0e-4098-a9fb-4653a7017195/oracao-misericordias-cada-manha-v3.mp3",
+  "original_filename": "oracao-misericordias-cada-manha-v3.mp3",
+  "size": 480768,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T01:50:19Z"
+  "created_at": "2026-11-23T04:07:14Z"
 }

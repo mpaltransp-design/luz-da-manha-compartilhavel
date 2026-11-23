@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "e350d867-06c3-4902-bc03-8b785ce5ccfa",
+  "asset_id": "cfce69f5-cce4-448d-b7ac-060031829c21",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/e350d867-06c3-4902-bc03-8b785ce5ccfa/amigo-em-todo-tempo.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/e350d867-06c3-4902-bc03-8b785ce5ccfa/amigo-em-todo-tempo.mp3",
-  "original_filename": "amigo-em-todo-tempo.mp3",
-  "size": 148032,
+  "url": "/__l5e/assets-v1/cfce69f5-cce4-448d-b7ac-060031829c21/oracao-amigo-em-todo-tempo-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/cfce69f5-cce4-448d-b7ac-060031829c21/oracao-amigo-em-todo-tempo-v3.mp3",
+  "original_filename": "oracao-amigo-em-todo-tempo-v3.mp3",
+  "size": 444288,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T02:58:57Z"
+  "created_at": "2026-11-23T04:07:44Z"
 }

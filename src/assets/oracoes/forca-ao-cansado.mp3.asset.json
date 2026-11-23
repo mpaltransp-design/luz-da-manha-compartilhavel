@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "2441dfa4-d5cb-4e82-a6d0-8635b14e43c1",
+  "asset_id": "15b797ce-54bd-49b3-a187-8d0bb680ccca",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/2441dfa4-d5cb-4e82-a6d0-8635b14e43c1/forca-ao-cansado.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/2441dfa4-d5cb-4e82-a6d0-8635b14e43c1/forca-ao-cansado.mp3",
-  "original_filename": "forca-ao-cansado.mp3",
-  "size": 152208,
+  "url": "/__l5e/assets-v1/15b797ce-54bd-49b3-a187-8d0bb680ccca/oracao-forca-ao-cansado-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/15b797ce-54bd-49b3-a187-8d0bb680ccca/oracao-forca-ao-cansado-v3.mp3",
+  "original_filename": "oracao-forca-ao-cansado-v3.mp3",
+  "size": 447360,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T02:58:29Z"
+  "created_at": "2026-11-23T04:07:40Z"
 }

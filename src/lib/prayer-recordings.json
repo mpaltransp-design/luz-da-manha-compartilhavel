@@ -1,0 +1,259 @@
+{
+  "version": "v3",
+  "synthesis": {
+    "model": "openai/gpt-4o-mini-tts",
+    "voice": "shimmer",
+    "speed": 1.0,
+    "instructions": "Fale em português brasileiro, com voz feminina suave, serena e acolhedora. Ore de verdade, dirigindo-se a Deus com súplica sincera e reverente, emoção contida e fé. Ritmo natural, um pouco mais ágil do que uma leitura lenta, sem pressa. Faça pausas breves e naturais de respiração. Use entonação de oração pessoal, carinhosa e sentida, não de locução, propaganda ou leitura mecânica. Não dramatize, não chore e não sussurre. Mantenha clareza e volume consistente, sem música."
+  },
+  "recordings": [
+    {
+      "key": "misericordias-cada-manha",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: As misericórdias do Senhor são a causa de não sermos consumidos; elas se renovam a cada manhã. Renova em mim a esperança. Perdoa minhas falhas e ajuda-me a acolher este dia sem carregar as culpas de ontem. Que eu reconheça tua misericórdia em cada pequeno cuidado. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "caminhe-com-fe",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Porque andamos por fé, e não por vista. Segura minha mão quando eu não conseguir enxergar o próximo passo. Não me deixes desistir por medo. Dá-me coragem para caminhar com fé, mesmo quando as respostas ainda não chegaram. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "paz-no-coracao",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Deixo-vos a paz, a minha paz vos dou; não vo-la dou como o mundo a dá. Acalma esta inquietação dentro de mim. Entrego a ti os pensamentos que me tiram o sossego. Que tua paz alcance minha casa, minhas conversas e as decisões que preciso tomar. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "deus-te-abencoe",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O Senhor te abençoe e te guarde; o Senhor faça resplandecer o seu rosto sobre ti. Abençoa quem ouve esta oração. Guarda sua família e ilumina seu caminho. Que teu amor seja abrigo nos momentos difíceis e que nunca lhe faltem cuidado, companhia e esperança. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "um-novo-comeco",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Eis que faço uma coisa nova; agora sairá à luz. Ajuda-me a recomeçar. Abre meus olhos para o que estás fazendo de novo e cura o medo de tentar outra vez. Entrego a ti o passado e peço coragem para viver este novo dia contigo. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "entrega-o-teu-caminho",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Entrega o teu caminho ao Senhor; confia nele, e o mais Ele fará Recebe meus planos e minhas preocupações. Tenho tentado resolver tudo sozinha, mas hoje escolho confiar em ti. Guia meus passos e ensina-me a esperar sem perder a esperança. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "caminho-seguro",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Lâmpada para os meus pés é tua palavra, e luz para o meu caminho. Ilumina os caminhos que parecem confusos. Que tua Palavra me ajude a discernir o que é bom e a escolher com sabedoria. Afasta-me das decisões apressadas e aproxima meu coração de ti. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "grata-pelo-hoje",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Este é o dia que fez o Senhor; regozijemo-nos e alegremo-nos nele. Obrigada pelo presente deste dia. Ensina-me a perceber as bênçãos que às vezes passam despercebidas. Que a gratidão transforme meu olhar e me ajude a espalhar alegria com gestos simples. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "louvor-da-manha",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Tudo quanto tem fôlego louve ao Senhor. Louvai ao Senhor! Recebe meu louvor nesta manhã. Mesmo quando as palavras faltarem, que minha vida te agradeça. Ajuda-me a usar o fôlego que me deste para encorajar, acolher e amar. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "o-senhor-e-meu-pastor",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O Senhor é o meu pastor, nada me faltará. Cuida de mim como o bom Pastor. Quando eu me sentir perdida, chama-me para perto. Sustenta minhas necessidades e ensina meu coração a descansar no teu cuidado, um dia de cada vez. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "flores-de-bom-dia",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Ele fez tudo formoso em seu tempo. Ensina-me a respeitar teu tempo. Que eu não me compare nem me desespere com a espera. Faz florescer em mim a paciência e ajuda-me a enxergar a beleza que colocaste neste dia. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "sol-da-justica",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Mas para vós, que temeis o meu nome, nascerá o sol da justiça, trazendo salvação debaixo das suas asas. Que tua luz visite os cantos escuros da minha alma. Traz esperança onde há desânimo e aquieta minhas dores. Ajuda-me a levar tua bondade às pessoas que encontrar hoje. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "cafe-com-deus",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Pela manhã ouvirás a minha voz, ó Senhor; pela manhã apresentarei a ti a minha oração. Antes de começar minhas tarefas, quero conversar contigo. Escuta o que meu coração não sabe dizer. Acompanha minha rotina e ajuda-me a lembrar da tua presença nos momentos mais simples. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "forca-para-hoje",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Tudo posso naquele que me fortalece. Fortalece-me para as responsabilidades de hoje. Tu conheces meu cansaço e meus limites. Dá-me serenidade para fazer o que posso e humildade para pedir ajuda quando precisar. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "nao-temas",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus. Fica comigo quando o medo apertar. Lembra-me de que não estou sozinha. Sustenta-me nos momentos de insegurança e ajuda-me a trocar a ansiedade pela confiança na tua presença. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "bencao-do-alto",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Toda a boa dádiva e todo o dom perfeito vem do alto, descendo do Pai das luzes. Obrigada por cada dádiva que vem de ti. Abençoa nosso sustento e as pessoas que cuidam de nós. Ensina-me a receber com gratidão e a repartir com generosidade. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "familia-abencoada",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Eu e a minha casa serviremos ao Senhor. Visita nossa família com teu amor. Que nossa casa seja um lugar de respeito, acolhimento e fé. Ajuda-nos a servir a ti também no modo como cuidamos uns dos outros. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "bencao-sem-medida",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O Senhor te dará abundância de bens… abrirá o seu bom tesouro, o céu. Olha com carinho para as necessidades da nossa casa. Abre caminhos de sustento e dá-nos sabedoria para administrar o que recebemos. Que nossa abundância também alcance quem precisa. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "descanso-da-alma",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei. Venho a ti cansada e sobrecarregada. Recebe este peso que já não consigo carregar sozinha. Dá descanso à minha alma e ensina-me a fazer pausas sem culpa, confiando no teu amor. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "aguas-tranquilas",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Deitar-me faz em verdes pastos, guia-me mansamente a águas tranquilas. Conduze-me para longe da agitação que me consome. Que tua presença seja água tranquila para minha alma. Ensina-me a respirar, escutar e caminhar no ritmo do teu cuidado. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "paz-que-excede",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: E a paz de Deus, que excede todo o entendimento, guardará os vossos corações. Guarda meu coração quando eu não compreender o que acontece. Não permitas que a preocupação domine meus pensamentos. Envolve-me na tua paz e sustenta minha fé durante a espera. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "obrigada-senhor",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Em tudo dai graças, porque esta é a vontade de Deus em Cristo Jesus para convosco. Obrigada pela vida, pelo pão e pelas mãos que me amparam. Nos dias difíceis, ajuda-me a agradecer sem esconder minha dor. Que eu reconheça tua presença mesmo nas pequenas bênçãos. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "bondade-do-senhor",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Louvai ao Senhor, porque ele é bom; porque a sua benignidade dura para sempre. Tua bondade me sustenta. Ajuda-me a não esquecer teu amor nos momentos de tristeza. Que eu também seja bondosa com quem cruza meu caminho e saiba oferecer acolhimento. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "boa-noite-em-paz",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Em paz também me deitarei e dormirei, porque só tu, Senhor, me fazes habitar em segurança. Entrego a ti este dia que termina. Acalma meus pensamentos e recebe as preocupações que insistem em me acompanhar. Guarda meu descanso e concede uma noite tranquila à minha família. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "boa-noite-guarda",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Eis que não tosquenejará nem dormirá o guarda de Israel. Enquanto eu durmo, confio nossa casa ao teu cuidado. Guarda quem está longe e ampara quem passa a noite em sofrimento. Que eu possa descansar sabendo que tua presença não me abandona. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "boa-noite-gratidao",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Bom é louvar ao Senhor… e anunciar de manhã a tua benignidade, e todas as noites a tua fidelidade. Obrigada por tua fidelidade ao longo deste dia. Recebe os acertos e as falhas, as alegrias e os cansaços. Renova nossas forças durante a noite e prepara nosso coração para amanhã. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "conforto-choro",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor. Acolhe quem está chorando hoje. Não deixes que a dor seja vivida em solidão. Envia pessoas que saibam escutar e abraçar, e sustenta nosso coração com a esperança do teu amor. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "conforto-perto",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Perto está o Senhor dos que têm o coração quebrantado. Aproxima-te deste coração ferido. Há dores que não sabemos explicar, mas tu as conheces. Fica conosco no silêncio e dá-nos forças para atravessar um dia de cada vez. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "conforto-bem-aventurados",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Bem-aventurados os que choram, porque eles serão consolados. Consola quem sente a ausência de alguém amado. Respeita nossas lágrimas e envolve-nos em ternura. Ajuda-nos a receber apoio e a encontrar pequenos momentos de paz nesta caminhada. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "conforto-ressurreicao",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Eu sou a ressurreição e a vida; quem crê em mim, ainda que esteja morto, viverá. Sustenta nossa esperança em Cristo. Quando a saudade apertar, lembra-nos do teu amor que não termina. Dá consolo à família enlutada e ajuda-nos a cuidar uns dos outros. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "aniversario-dias",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Ensina-nos a contar os nossos dias, de tal maneira que alcancemos corações sábios. Obrigada pela vida de quem celebra mais um ano. Concede sabedoria para viver cada dia com amor. Abençoa seus caminhos, seus encontros e os sonhos que guarda no coração. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "aniversario-planos",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Porque eu bem sei os pensamentos que tenho a vosso respeito… pensamentos de paz, e não de mal, para vos dar o fim que esperais. Abençoa este novo ano de vida. Guia os planos de quem está aniversariando e dá coragem diante das mudanças. Que encontre pessoas generosas e reconheça teu cuidado em cada etapa. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "sob-suas-asas",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Ele te cobrirá com as suas penas, e debaixo das suas asas estarás seguro; a sua verdade será o teu escudo. Acolhe-nos debaixo das tuas asas. Quando o mundo parecer ameaçador, sê nosso abrigo. Dá prudência às nossas escolhas e protege nossa família nos caminhos de cada dia. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "guarda-entrada-saida",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O Senhor guardará a tua entrada e a tua saída, desde agora e para sempre. Guarda nossa saída e nossa volta para casa. Acompanha quem viaja, quem trabalha e quem espera notícias. Concede atenção, prudência e um retorno em paz aos braços da família. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "nenhuma-arma-prosperara",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Nenhuma arma forjada contra ti prosperará. Sê nossa defesa diante da injustiça. Não deixes que o rancor governe nosso coração. Dá discernimento para nos proteger e coragem para buscar ajuda, permanecendo firmes na fé. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "filhos-heranca",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Eis que os filhos são herança do Senhor, e o fruto do ventre o seu galardão. Entrego nossos filhos e netos em tuas mãos. Ajuda-nos a cuidar deles com amor, sem esquecer que cada um tem seu caminho. Dá sabedoria para orientar e paciência para escutar. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "casa-sobre-a-rocha",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Se o Senhor não edificar a casa, em vão trabalham os que a edificam. Sê o alicerce da nossa casa. Fortalece os vínculos que o cansaço enfraqueceu e ensina-nos a conversar com respeito. Que nossa família encontre em ti força para atravessar as dificuldades. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "amor-que-une",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: E, sobre tudo isto, revesti-vos de amor, que é o vínculo da perfeição. Reveste nossa família de amor. Ajuda-nos a pedir perdão, a ouvir com atenção e a tratar cada pessoa com dignidade. Que a mesa e os encontros sejam oportunidades de reconciliação. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "filhos-guardados",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Todos os teus filhos serão ensinados pelo Senhor; e a paz de teus filhos será abundante. Acompanha nossos filhos onde estiverem. Ensina-lhes o caminho da paz e aproxima deles pessoas que façam o bem. Dá-nos serenidade para confiar e presença para apoiar quando precisarem. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "oracao-pelo-lar",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Paz seja nesta casa. Que tua paz habite nossa casa. Abençoa cada quarto, cada conversa e cada refeição. Afasta a dureza dos nossos gestos e ensina-nos a transformar nosso lar em lugar de acolhimento. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "aniversario-bencao",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O Senhor te abençoe e te guarde. Abençoa quem celebra a vida hoje. Guarda sua saúde e seus afetos. Que este novo ciclo traga encontros de carinho, oportunidades de aprender e motivos sinceros para agradecer. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "aniversario-alegria",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Coroas o ano com a tua bondade, e as tuas veredas destilam fartura. Coroa este novo ano de vida com tua bondade. Concede alegria nas pequenas coisas e força nas dificuldades. Que o aniversariante se sinta amado e encontre esperança para seguir. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "conforto-saudade",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Ele sara os quebrantados de coração, e lhes ata as suas feridas. Cuida deste coração cheio de saudade. Ajuda-nos a recordar com amor, sem exigir que a tristeza passe depressa. Sustenta-nos nas datas difíceis e envia companhia para os dias mais pesados. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "conforto-refugio",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia. Sê nosso refúgio nesta angústia. Quando faltarem palavras e forças, ampara-nos. Ajuda-nos a encontrar apoio e a descansar por um momento, sabendo que podemos contar contigo. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "forca-ao-cansado",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Dá força ao cansado e multiplica as forças ao que não tem nenhum vigor. Renova as forças de quem está exausto. Abençoa quem cuida de outras pessoas e também precisa de cuidado. Dá-nos descanso, apoio e coragem para respeitar os limites do corpo. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "cura-me-senhor",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Cura-me, Senhor, e serei curado; salva-me, e serei salvo; porque tu és o meu louvor. Olha para quem enfrenta uma enfermidade. Alivia a dor e sustenta sua esperança. Abençoa os profissionais de saúde, os tratamentos e a família que acompanha este caminho de cuidado. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "bendize-minha-alma",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Bendize, ó minha alma, ao Senhor, e não te esqueças de nenhum de seus benefícios. É ele que perdoa todas as tuas iniquidades, que sara todas as tuas enfermidades. Obrigada pelos cuidados que sustentam nossa saúde. Visita quem está doente e dá sabedoria a quem o trata. Ajuda-nos a cuidar do corpo e da alma com gratidão e responsabilidade. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "clamei-e-me-saraste",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Senhor, meu Deus, clamei a ti, e tu me saraste. Escuta o clamor de quem sofre. Concede alívio, tratamento e pessoas que saibam cuidar. Nos momentos de medo, sustenta nossa confiança e dá-nos paciência durante a recuperação. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "anjo-acampa-ao-redor",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O anjo do Senhor acampa-se ao redor dos que o temem, e os livra. Cerca nossa família com teu cuidado. Guarda quem se sente vulnerável e ajuda-nos a agir com prudência. Que tua presença nos acompanhe e dê serenidade para seguir o caminho. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "amigo-em-todo-tempo",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Em todo o tempo ama o amigo, e na angústia nasce o irmão. Obrigada pelos amigos que permanecem nos dias difíceis. Abençoa cada um deles e ensina-me a ser uma presença fiel. Que nossa amizade seja lugar de escuta, cuidado e oração. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "melhor-sao-dois",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Melhor é serem dois do que um… porque se um cair, o outro levanta o seu companheiro. Ajuda-nos a caminhar juntos. Quando alguém cair, dá-nos sensibilidade para estender a mão. Livra-nos do orgulho de querer fazer tudo sozinhos e fortalece nossa comunhão. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "edificai-uns-aos-outros",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Exortai-vos uns aos outros e edificai-vos uns aos outros, como também o fazeis. Guia nossas palavras para que elas encorajem, e não firam. Que eu perceba quem precisa de apoio e ofereça carinho sem julgamento. Fortalece os irmãos na fé e nossa disposição de servir. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "perfume-da-amizade",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O óleo e o perfume alegram o coração; assim o faz a doçura do amigo com o seu conselho cordial. Obrigada pela doçura das amizades sinceras. Dá sabedoria aos nossos conselhos e ternura aos nossos encontros. Que nossa presença leve alegria e que saibamos respeitar as diferenças. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "segunda-de-vitorias",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Este é o dia que fez o Senhor; regozijemo-nos e alegremo-nos nele. Entrego a ti esta segunda-feira e a semana que começa. Organiza meus pensamentos e dá-me coragem para iniciar. Que eu trabalhe com honestidade e encontre tempo para cuidar de quem amo. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "quarta-de-descanso",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei. Nesta quarta-feira, renova meu ânimo. Recebe o cansaço dos últimos dias e ajuda-me a continuar sem me maltratar. Dá equilíbrio entre as tarefas, o descanso e o cuidado com a família. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "sexta-de-gratidao",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Louvai ao Senhor, porque ele é bom, porque a sua benignidade dura para sempre. Obrigada por me sustentar até esta sexta-feira. Recebe as preocupações que ainda ficaram pendentes. Abençoa nosso descanso e ajuda-nos a terminar a semana com gratidão e paz. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "domingo-na-casa-do-senhor",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Alegrei-me quando me disseram: Vamos à casa do Senhor. Abençoa este domingo de encontro contigo. Renova nossa fé e acolhe quem se sente distante. Que a comunhão nos ensine a servir e que nossa casa se encha de paz e carinho. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "deus-supre-tudo",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O meu Deus, segundo as suas riquezas, suprirá todas as vossas necessidades em glória, por Cristo Jesus. Conheces as necessidades da nossa casa. Abre caminhos de trabalho e sustento e ampara quem está desempregado. Dá-nos sabedoria, apoio e generosidade para repartir o que temos. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "confia-ao-senhor-tuas-obras",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Confia ao Senhor as tuas obras, e os teus planos serão estabelecidos. Entrego a ti meu trabalho e meus planos. Dá clareza às decisões e honestidade às minhas atitudes. Ajuda-me a construir com paciência, sem perder o cuidado com minha saúde e minha família. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "obra-das-nossas-maos",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: Seja sobre nós a graça do Senhor, nosso Deus; e confirma sobre nós a obra das nossas mãos. Abençoa a obra das nossas mãos. Que nosso esforço sirva para o bem e seja tratado com dignidade. Concede criatividade, perseverança e descanso a quem trabalha todos os dias. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "bencao-nos-celeiros",
+      "text": "Senhor, meu Deus, tua Palavra nos lembra: O Senhor mandará que a bênção esteja contigo nos teus celeiros e em tudo o que puseres a tua mão. Abençoa nosso sustento e a mesa de cada família. Cuida de quem planta, produz e prepara o alimento. Ajuda-nos a evitar o desperdício e a repartir o pão com quem precisa. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    },
+    {
+      "key": "geral",
+      "text": "Senhor, meu Deus, nesta manhã eu me coloco em tua presença. Obrigada pelo dom da vida e por mais uma oportunidade de recomeçar. Recebe minhas preocupações e acalma meu coração. Guia meus passos com sabedoria e ajuda-me a tratar cada pessoa com amor. Abençoa minha família, guarda quem está longe e sustenta quem enfrenta dificuldades. Que não faltem pão, cuidado e esperança em nossa casa. Ensina-me a reconhecer tua presença nas pequenas coisas e a repartir as bênçãos que recebo. Quando eu me cansar, segura minha mão. Quando eu tiver medo, lembra-me de que não estou sozinha. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
+    }
+  ]
+}

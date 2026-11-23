@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "e4c68291-c446-4c8c-9201-0b7a1c08a3a0",
+  "asset_id": "d70778f3-ae7e-4b11-9db4-16b524214721",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/e4c68291-c446-4c8c-9201-0b7a1c08a3a0/oracao-amor-que-une.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/e4c68291-c446-4c8c-9201-0b7a1c08a3a0/oracao-amor-que-une.mp3",
-  "original_filename": "oracao-amor-que-une.mp3",
-  "size": 121392,
+  "url": "/__l5e/assets-v1/d70778f3-ae7e-4b11-9db4-16b524214721/oracao-amor-que-une-v3.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/d70778f3-ae7e-4b11-9db4-16b524214721/oracao-amor-que-une-v3.mp3",
+  "original_filename": "oracao-amor-que-une-v3.mp3",
+  "size": 480768,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T02:21:10Z"
+  "created_at": "2026-11-23T04:07:36Z"
 }
