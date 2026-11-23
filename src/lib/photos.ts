@@ -134,6 +134,267 @@ import sewing from "@/assets/photos/sewing.jpg.asset.json";
 import archway from "@/assets/photos/archway.jpg.asset.json";
 import pantry from "@/assets/photos/pantry.jpg.asset.json";
 
+import morningcurtain from "@/assets/photos/morningcurtain.jpg.asset.json";
+import peachcarnations from "@/assets/photos/peachcarnations.jpg.asset.json";
+import graniteledge from "@/assets/photos/graniteledge.jpg.asset.json";
+import rootedfig from "@/assets/photos/rootedfig.jpg.asset.json";
+import hourglasslight from "@/assets/photos/hourglasslight.jpg.asset.json";
+import porcelainbasin from "@/assets/photos/porcelainbasin.jpg.asset.json";
+import knittedshawl from "@/assets/photos/knittedshawl.jpg.asset.json";
+import apricotparcel from "@/assets/photos/apricotparcel.jpg.asset.json";
+import foldednapkins from "@/assets/photos/foldednapkins.jpg.asset.json";
+import openbalcony from "@/assets/photos/openbalcony.jpg.asset.json";
+import gardenstair from "@/assets/photos/gardenstair.jpg.asset.json";
+import cedartrunk from "@/assets/photos/cedartrunk.jpg.asset.json";
+import freesiavase from "@/assets/photos/freesiavase.jpg.asset.json";
+import quietalcove from "@/assets/photos/quietalcove.jpg.asset.json";
+import sunlitkettle from "@/assets/photos/sunlitkettle.jpg.asset.json";
+import coveredterrace from "@/assets/photos/coveredterrace.jpg.asset.json";
+import antiqueclock from "@/assets/photos/antiqueclock.jpg.asset.json";
+import seedfurrows from "@/assets/photos/seedfurrows.jpg.asset.json";
+import guesttray from "@/assets/photos/guesttray.jpg.asset.json";
+import peachcloudscape from "@/assets/photos/peachcloudscape.jpg.asset.json";
+import cosmosgarden from "@/assets/photos/cosmosgarden.jpg.asset.json";
+import ricebowl from "@/assets/photos/ricebowl.jpg.asset.json";
+import linenarmchair from "@/assets/photos/linenarmchair.jpg.asset.json";
+import courtyardfountain from "@/assets/photos/courtyardfountain.jpg.asset.json";
+import restingquilt from "@/assets/photos/restingquilt.jpg.asset.json";
+import peachtowel from "@/assets/photos/peachtowel.jpg.asset.json";
+import mendingbasket from "@/assets/photos/mendingbasket.jpg.asset.json";
+import prayercushion from "@/assets/photos/prayercushion.jpg.asset.json";
+import pairedcushions from "@/assets/photos/pairedcushions.jpg.asset.json";
+import alabastervase from "@/assets/photos/alabastervase.jpg.asset.json";
+import wovenplacemats from "@/assets/photos/wovenplacemats.jpg.asset.json";
+import ribbonkeepsake from "@/assets/photos/ribbonkeepsake.jpg.asset.json";
+import roundrug from "@/assets/photos/roundrug.jpg.asset.json";
+import climbingjasmine from "@/assets/photos/climbingjasmine.jpg.asset.json";
+import shelteredveranda from "@/assets/photos/shelteredveranda.jpg.asset.json";
+import applesack from "@/assets/photos/applesack.jpg.asset.json";
+import sunlitfootbridge from "@/assets/photos/sunlitfootbridge.jpg.asset.json";
+import crochetmotif from "@/assets/photos/crochetmotif.jpg.asset.json";
+import readingglasses from "@/assets/photos/readingglasses.jpg.asset.json";
+import blossomingbranch from "@/assets/photos/blossomingbranch.jpg.asset.json";
+import gardenarch from "@/assets/photos/gardenarch.jpg.asset.json";
+import scripturecorner from "@/assets/photos/scripturecorner.jpg.asset.json";
+import interwovenlinen from "@/assets/photos/interwovenlinen.jpg.asset.json";
+import woodencrosswall from "@/assets/photos/woodencrosswall.jpg.asset.json";
+import gardenboundary from "@/assets/photos/gardenboundary.jpg.asset.json";
+import stoneflowerbed from "@/assets/photos/stoneflowerbed.jpg.asset.json";
+import sheercanopy from "@/assets/photos/sheercanopy.jpg.asset.json";
+import porcelainpitcher from "@/assets/photos/porcelainpitcher.jpg.asset.json";
+import cottonthrow from "@/assets/photos/cottonthrow.jpg.asset.json";
+import limestonepath from "@/assets/photos/limestonepath.jpg.asset.json";
+import herbgarden from "@/assets/photos/herbgarden.jpg.asset.json";
+import simplemeal from "@/assets/photos/simplemeal.jpg.asset.json";
+import fruittreepatio from "@/assets/photos/fruittreepatio.jpg.asset.json";
+import distanthorizon from "@/assets/photos/distanthorizon.jpg.asset.json";
+import emptywindowseat from "@/assets/photos/emptywindowseat.jpg.asset.json";
+import memorychest from "@/assets/photos/memorychest.jpg.asset.json";
+import travelbag from "@/assets/photos/travelbag.jpg.asset.json";
+import reedssunlight from "@/assets/photos/reedssunlight.jpg.asset.json";
+import churchpews from "@/assets/photos/churchpews.jpg.asset.json";
+import peachmagnolia from "@/assets/photos/peachmagnolia.jpg.asset.json";
+import shellkeepsakes from "@/assets/photos/shellkeepsakes.jpg.asset.json";
+import barefigbranch from "@/assets/photos/barefigbranch.jpg.asset.json";
+import pumpkinsoup from "@/assets/photos/pumpkinsoup.jpg.asset.json";
+import apricotzinnias from "@/assets/photos/apricotzinnias.jpg.asset.json";
+import amberglassbowl from "@/assets/photos/amberglassbowl.jpg.asset.json";
+import wovenstool from "@/assets/photos/wovenstool.jpg.asset.json";
+import peachcamellia from "@/assets/photos/peachcamellia.jpg.asset.json";
+import openstonedoorway from "@/assets/photos/openstonedoorway.jpg.asset.json";
+import goldenestuary from "@/assets/photos/goldenestuary.jpg.asset.json";
+import petaloffering from "@/assets/photos/petaloffering.jpg.asset.json";
+import bedsideglow from "@/assets/photos/bedsideglow.jpg.asset.json";
+import sunlitcliff from "@/assets/photos/sunlitcliff.jpg.asset.json";
+import apronhook from "@/assets/photos/apronhook.jpg.asset.json";
+import uprightpiano from "@/assets/photos/uprightpiano.jpg.asset.json";
+import dailyteatray from "@/assets/photos/dailyteatray.jpg.asset.json";
+import circleofottomans from "@/assets/photos/circleofottomans.jpg.asset.json";
+import rosemaryroots from "@/assets/photos/rosemaryroots.jpg.asset.json";
+import softprayernook from "@/assets/photos/softprayernook.jpg.asset.json";
+import ivoryarchlight from "@/assets/photos/ivoryarchlight.jpg.asset.json";
+import blossomafterrain from "@/assets/photos/blossomafterrain.jpg.asset.json";
+import ivorypillow from "@/assets/photos/ivorypillow.jpg.asset.json";
+import linenbolster from "@/assets/photos/linenbolster.jpg.asset.json";
+import litdoorstep from "@/assets/photos/litdoorstep.jpg.asset.json";
+import harpstrings from "@/assets/photos/harpstrings.jpg.asset.json";
+import bedsideslippers from "@/assets/photos/bedsideslippers.jpg.asset.json";
+import pearsupper from "@/assets/photos/pearsupper.jpg.asset.json";
+import quiltnest from "@/assets/photos/quiltnest.jpg.asset.json";
+import curtainfolds from "@/assets/photos/curtainfolds.jpg.asset.json";
+import velvetheart from "@/assets/photos/velvetheart.jpg.asset.json";
+import ceramicwatercup from "@/assets/photos/ceramicwatercup.jpg.asset.json";
+import skylightstars from "@/assets/photos/skylightstars.jpg.asset.json";
+import rainybaywindow from "@/assets/photos/rainybaywindow.jpg.asset.json";
+import closedworkbasket from "@/assets/photos/closedworkbasket.jpg.asset.json";
+import orchidbud from "@/assets/photos/orchidbud.jpg.asset.json";
+import pairedlamps from "@/assets/photos/pairedlamps.jpg.asset.json";
+import olivewoodcross from "@/assets/photos/olivewoodcross.jpg.asset.json";
+import wovenheadboard from "@/assets/photos/wovenheadboard.jpg.asset.json";
+import peachribbonbundle from "@/assets/photos/peachribbonbundle.jpg.asset.json";
+import eveningthreshold from "@/assets/photos/eveningthreshold.jpg.asset.json";
+import softtissuebox from "@/assets/photos/softtissuebox.jpg.asset.json";
+import tearfulpetal from "@/assets/photos/tearfulpetal.jpg.asset.json";
+import linenbookcover from "@/assets/photos/linenbookcover.jpg.asset.json";
+import shelteredanemone from "@/assets/photos/shelteredanemone.jpg.asset.json";
+import woolenfold from "@/assets/photos/woolenfold.jpg.asset.json";
+import soupcrock from "@/assets/photos/soupcrock.jpg.asset.json";
+import sunlitbedrock from "@/assets/photos/sunlitbedrock.jpg.asset.json";
+import radiantvalley from "@/assets/photos/radiantvalley.jpg.asset.json";
+import warmcurvedsofa from "@/assets/photos/warmcurvedsofa.jpg.asset.json";
+import brassdoorhandle from "@/assets/photos/brassdoorhandle.jpg.asset.json";
+import almondsunrise from "@/assets/photos/almondsunrise.jpg.asset.json";
+import highrockhaven from "@/assets/photos/highrockhaven.jpg.asset.json";
+import sunlitmobile from "@/assets/photos/sunlitmobile.jpg.asset.json";
+import heirloomlocket from "@/assets/photos/heirloomlocket.jpg.asset.json";
+import crocuslight from "@/assets/photos/crocuslight.jpg.asset.json";
+import daybreakgarden from "@/assets/photos/daybreakgarden.jpg.asset.json";
+import restfuldaybed from "@/assets/photos/restfuldaybed.jpg.asset.json";
+import softcashmere from "@/assets/photos/softcashmere.jpg.asset.json";
+import pairedteabowls from "@/assets/photos/pairedteabowls.jpg.asset.json";
+import anchoredwoodenboat from "@/assets/photos/anchoredwoodenboat.jpg.asset.json";
+import shelteredloggia from "@/assets/photos/shelteredloggia.jpg.asset.json";
+import fruitfulpearbranch from "@/assets/photos/fruitfulpearbranch.jpg.asset.json";
+import porcelainbookstill from "@/assets/photos/porcelainbookstill.jpg.asset.json";
+import pearlbirthdaysetting from "@/assets/photos/pearlbirthdaysetting.jpg.asset.json";
+import silkscarfdaylight from "@/assets/photos/silkscarfdaylight.jpg.asset.json";
+import sunlitapricottart from "@/assets/photos/sunlitapricottart.jpg.asset.json";
+import creamfloatingpetals from "@/assets/photos/creamfloatingpetals.jpg.asset.json";
+import unopenedranunculus from "@/assets/photos/unopenedranunculus.jpg.asset.json";
+import peachcelebrationtable from "@/assets/photos/peachcelebrationtable.jpg.asset.json";
+import sunlitstonebridge from "@/assets/photos/sunlitstonebridge.jpg.asset.json";
+import breezylinenblossoms from "@/assets/photos/breezylinenblossoms.jpg.asset.json";
+import dahliapetaldetail from "@/assets/photos/dahliapetaldetail.jpg.asset.json";
+import heirloomteaservice from "@/assets/photos/heirloomteaservice.jpg.asset.json";
+import dawnterracesteps from "@/assets/photos/dawnterracesteps.jpg.asset.json";
+import unfinishedfloralstitch from "@/assets/photos/unfinishedfloralstitch.jpg.asset.json";
+import sharinghoneybiscuits from "@/assets/photos/sharinghoneybiscuits.jpg.asset.json";
+import goldenskybalcony from "@/assets/photos/goldenskybalcony.jpg.asset.json";
+import claypotnewleaves from "@/assets/photos/claypotnewleaves.jpg.asset.json";
+import harboranchorlight from "@/assets/photos/harboranchorlight.jpg.asset.json";
+import roundbirthdaygathering from "@/assets/photos/roundbirthdaygathering.jpg.asset.json";
+import honeybirthdaymadeleines from "@/assets/photos/honeybirthdaymadeleines.jpg.asset.json";
+import rosecoveredalcove from "@/assets/photos/rosecoveredalcove.jpg.asset.json";
+import openivoryshutters from "@/assets/photos/openivoryshutters.jpg.asset.json";
+import shelteredolivesapling from "@/assets/photos/shelteredolivesapling.jpg.asset.json";
+import sunrisevalleyvista from "@/assets/photos/sunrisevalleyvista.jpg.asset.json";
+import hilltopwalledgarden from "@/assets/photos/hilltopwalledgarden.jpg.asset.json";
+import ceramiclampdesk from "@/assets/photos/ceramiclampdesk.jpg.asset.json";
+import closedbiblelinen from "@/assets/photos/closedbiblelinen.jpg.asset.json";
+import woodenhandrailpath from "@/assets/photos/woodenhandrailpath.jpg.asset.json";
+import quietshorecove from "@/assets/photos/quietshorecove.jpg.asset.json";
+import sunlitcanyontrail from "@/assets/photos/sunlitcanyontrail.jpg.asset.json";
+import sandstonecottagebase from "@/assets/photos/sandstonecottagebase.jpg.asset.json";
+import courtyardchaircircle from "@/assets/photos/courtyardchaircircle.jpg.asset.json";
+import sturdycedardoor from "@/assets/photos/sturdycedardoor.jpg.asset.json";
+import shelteringbeechcanopy from "@/assets/photos/shelteringbeechcanopy.jpg.asset.json";
+import dawnprayerstool from "@/assets/photos/dawnprayerstool.jpg.asset.json";
+import marketbasketentry from "@/assets/photos/marketbasketentry.jpg.asset.json";
+import resilientcoastalpine from "@/assets/photos/resilientcoastalpine.jpg.asset.json";
+import warmbrothsetting from "@/assets/photos/warmbrothsetting.jpg.asset.json";
+import peachblanketarmrest from "@/assets/photos/peachblanketarmrest.jpg.asset.json";
+import goldenwalledcourtyard from "@/assets/photos/goldenwalledcourtyard.jpg.asset.json";
+import sunlitdollhouse from "@/assets/photos/sunlitdollhouse.jpg.asset.json";
+import peachteaconversation from "@/assets/photos/peachteaconversation.jpg.asset.json";
+import tidytoyshelf from "@/assets/photos/tidytoyshelf.jpg.asset.json";
+import woodenblocktower from "@/assets/photos/woodenblocktower.jpg.asset.json";
+import generationalquiltdetail from "@/assets/photos/generationalquiltdetail.jpg.asset.json";
+import devotionalbooklap from "@/assets/photos/devotionalbooklap.jpg.asset.json";
+import eldercaretray from "@/assets/photos/eldercaretray.jpg.asset.json";
+import growinggardensaplings from "@/assets/photos/growinggardensaplings.jpg.asset.json";
+import softnurserycradle from "@/assets/photos/softnurserycradle.jpg.asset.json";
+import threefloorcushions from "@/assets/photos/threefloorcushions.jpg.asset.json";
+import extrasuppersetting from "@/assets/photos/extrasuppersetting.jpg.asset.json";
+import phoneandflowers from "@/assets/photos/phoneandflowers.jpg.asset.json";
+import sharedkitchencleanup from "@/assets/photos/sharedkitchencleanup.jpg.asset.json";
+import citrusservingdish from "@/assets/photos/citrusservingdish.jpg.asset.json";
+import foldinglaundrytogether from "@/assets/photos/foldinglaundrytogether.jpg.asset.json";
+import modestcornmealmeal from "@/assets/photos/modestcornmealmeal.jpg.asset.json";
+import gardenresttray from "@/assets/photos/gardenresttray.jpg.asset.json";
+import homemademealdelivery from "@/assets/photos/homemademealdelivery.jpg.asset.json";
+import mixedceramiccups from "@/assets/photos/mixedceramiccups.jpg.asset.json";
+import branchingyoungappletree from "@/assets/photos/branchingyoungappletree.jpg.asset.json";
+import recoveryroomlight from "@/assets/photos/recoveryroomlight.jpg.asset.json";
+import rehabilitationrails from "@/assets/photos/rehabilitationrails.jpg.asset.json";
+import apricotgerberas from "@/assets/photos/apricotgerberas.jpg.asset.json";
+import linenwashstand from "@/assets/photos/linenwashstand.jpg.asset.json";
+import cliniccourtyard from "@/assets/photos/cliniccourtyard.jpg.asset.json";
+import shelteredwaterlily from "@/assets/photos/shelteredwaterlily.jpg.asset.json";
+import silverhandledcane from "@/assets/photos/silverhandledcane.jpg.asset.json";
+import peachlinenhem from "@/assets/photos/peachlinenhem.jpg.asset.json";
+import archedreadingniche from "@/assets/photos/archedreadingniche.jpg.asset.json";
+import newbegonialeaf from "@/assets/photos/newbegonialeaf.jpg.asset.json";
+import consultationchairs from "@/assets/photos/consultationchairs.jpg.asset.json";
+import prayerottomanlight from "@/assets/photos/prayerottomanlight.jpg.asset.json";
+import healthconsultdesk from "@/assets/photos/healthconsultdesk.jpg.asset.json";
+import peachhotwaterbottle from "@/assets/photos/peachhotwaterbottle.jpg.asset.json";
+import heirloomwickerrecliner from "@/assets/photos/heirloomwickerrecliner.jpg.asset.json";
+import sunlitcarecorridor from "@/assets/photos/sunlitcarecorridor.jpg.asset.json";
+import honeycombceramicplate from "@/assets/photos/honeycombceramicplate.jpg.asset.json";
+import ivoryprayerkneeler from "@/assets/photos/ivoryprayerkneeler.jpg.asset.json";
+import peachwalkingshoes from "@/assets/photos/peachwalkingshoes.jpg.asset.json";
+import goldenbamboogrove from "@/assets/photos/goldenbamboogrove.jpg.asset.json";
+import welcomingentrytable from "@/assets/photos/welcomingentrytable.jpg.asset.json";
+import braidedfabricring from "@/assets/photos/braidedfabricring.jpg.asset.json";
+import saltcellarsetting from "@/assets/photos/saltcellarsetting.jpg.asset.json";
+import differentflowerpots from "@/assets/photos/differentflowerpots.jpg.asset.json";
+import equalplacesetting from "@/assets/photos/equalplacesetting.jpg.asset.json";
+import heartshapedcookiesplate from "@/assets/photos/heartshapedcookiesplate.jpg.asset.json";
+import helpingwithshawl from "@/assets/photos/helpingwithshawl.jpg.asset.json";
+import vegetabledeliverybag from "@/assets/photos/vegetabledeliverybag.jpg.asset.json";
+import guestroomwashcloths from "@/assets/photos/guestroomwashcloths.jpg.asset.json";
+import rusticsharingloaf from "@/assets/photos/rusticsharingloaf.jpg.asset.json";
+import studybookpair from "@/assets/photos/studybookpair.jpg.asset.json";
+import coveredceramicdish from "@/assets/photos/coveredceramicdish.jpg.asset.json";
+import refreshmentglassjug from "@/assets/photos/refreshmentglassjug.jpg.asset.json";
+import threefoldcottoncord from "@/assets/photos/threefoldcottoncord.jpg.asset.json";
+import quietconversationcorner from "@/assets/photos/quietconversationcorner.jpg.asset.json";
+import patchworktablecenter from "@/assets/photos/patchworktablecenter.jpg.asset.json";
+import nasturtiumtrellis from "@/assets/photos/nasturtiumtrellis.jpg.asset.json";
+import blankenveloperose from "@/assets/photos/blankenveloperose.jpg.asset.json";
+import gardenwalkingpair from "@/assets/photos/gardenwalkingpair.jpg.asset.json";
+import peacefulchurchcourtyard from "@/assets/photos/peacefulchurchcourtyard.jpg.asset.json";
+import sunlitcompass from "@/assets/photos/sunlitcompass.jpg.asset.json";
+import lowprayerstool from "@/assets/photos/lowprayerstool.jpg.asset.json";
+import wrappedvegetablequiche from "@/assets/photos/wrappedvegetablequiche.jpg.asset.json";
+import acousticguitarsunlight from "@/assets/photos/acousticguitarsunlight.jpg.asset.json";
+import linenfootrest from "@/assets/photos/linenfootrest.jpg.asset.json";
+import chapelorganlight from "@/assets/photos/chapelorganlight.jpg.asset.json";
+import apricotbirdfeeder from "@/assets/photos/apricotbirdfeeder.jpg.asset.json";
+import peachconversationchairs from "@/assets/photos/peachconversationchairs.jpg.asset.json";
+import magnifyingglasslinen from "@/assets/photos/magnifyingglasslinen.jpg.asset.json";
+import goldenbayanchorage from "@/assets/photos/goldenbayanchorage.jpg.asset.json";
+import sharedorangepreserve from "@/assets/photos/sharedorangepreserve.jpg.asset.json";
+import flourdustedrollingpin from "@/assets/photos/flourdustedrollingpin.jpg.asset.json";
+import sunlitatticcorner from "@/assets/photos/sunlitatticcorner.jpg.asset.json";
+import freshwaterstonebasin from "@/assets/photos/freshwaterstonebasin.jpg.asset.json";
+import rootedrosemarypot from "@/assets/photos/rootedrosemarypot.jpg.asset.json";
+import morninggardengate from "@/assets/photos/morninggardengate.jpg.asset.json";
+import peachroseswindowledge from "@/assets/photos/peachroseswindowledge.jpg.asset.json";
+import ripeningpeachbranch from "@/assets/photos/ripeningpeachbranch.jpg.asset.json";
+import apricotjamgift from "@/assets/photos/apricotjamgift.jpg.asset.json";
+import sunlitmarigoldplanter from "@/assets/photos/sunlitmarigoldplanter.jpg.asset.json";
+import woodencompassworkspace from "@/assets/photos/woodencompassworkspace.jpg.asset.json";
+import finishedlinenpouches from "@/assets/photos/finishedlinenpouches.jpg.asset.json";
+import woolandflaxstudio from "@/assets/photos/woolandflaxstudio.jpg.asset.json";
+import balancedbrassscale from "@/assets/photos/balancedbrassscale.jpg.asset.json";
+import humbleceramicsetting from "@/assets/photos/humbleceramicsetting.jpg.asset.json";
+import gardenpotatoharvest from "@/assets/photos/gardenpotatoharvest.jpg.asset.json";
+import grainfilledscoop from "@/assets/photos/grainfilledscoop.jpg.asset.json";
+import workbootsatdawn from "@/assets/photos/workbootsatdawn.jpg.asset.json";
+import walletbesideofferingbowl from "@/assets/photos/walletbesideofferingbowl.jpg.asset.json";
+import crossaboveworkstation from "@/assets/photos/crossaboveworkstation.jpg.asset.json";
+import sortedbuttondrawers from "@/assets/photos/sortedbuttondrawers.jpg.asset.json";
+import polishedgardentools from "@/assets/photos/polishedgardentools.jpg.asset.json";
+import apricotsandcreamcup from "@/assets/photos/apricotsandcreamcup.jpg.asset.json";
+import cottoncardiganandmeal from "@/assets/photos/cottoncardiganandmeal.jpg.asset.json";
+import unfiredclaycups from "@/assets/photos/unfiredclaycups.jpg.asset.json";
+import cleaningcaddysunshine from "@/assets/photos/cleaningcaddysunshine.jpg.asset.json";
+import closedbakerycounter from "@/assets/photos/closedbakerycounter.jpg.asset.json";
+import tendedkitchengarden from "@/assets/photos/tendedkitchengarden.jpg.asset.json";
+import quietweavingloom from "@/assets/photos/quietweavingloom.jpg.asset.json";
+import simplebudgetenvelopes from "@/assets/photos/simplebudgetenvelopes.jpg.asset.json";
+
 export const photos = {
   beach: beach.url,
   walkway: walkway.url,
@@ -269,6 +530,266 @@ export const photos = {
   sewing: sewing.url,
   archway: archway.url,
   pantry: pantry.url,
+  morningcurtain: morningcurtain.url,
+  peachcarnations: peachcarnations.url,
+  graniteledge: graniteledge.url,
+  rootedfig: rootedfig.url,
+  hourglasslight: hourglasslight.url,
+  porcelainbasin: porcelainbasin.url,
+  knittedshawl: knittedshawl.url,
+  apricotparcel: apricotparcel.url,
+  foldednapkins: foldednapkins.url,
+  openbalcony: openbalcony.url,
+  gardenstair: gardenstair.url,
+  cedartrunk: cedartrunk.url,
+  freesiavase: freesiavase.url,
+  quietalcove: quietalcove.url,
+  sunlitkettle: sunlitkettle.url,
+  coveredterrace: coveredterrace.url,
+  antiqueclock: antiqueclock.url,
+  seedfurrows: seedfurrows.url,
+  guesttray: guesttray.url,
+  peachcloudscape: peachcloudscape.url,
+  cosmosgarden: cosmosgarden.url,
+  ricebowl: ricebowl.url,
+  linenarmchair: linenarmchair.url,
+  courtyardfountain: courtyardfountain.url,
+  restingquilt: restingquilt.url,
+  peachtowel: peachtowel.url,
+  mendingbasket: mendingbasket.url,
+  prayercushion: prayercushion.url,
+  pairedcushions: pairedcushions.url,
+  alabastervase: alabastervase.url,
+  wovenplacemats: wovenplacemats.url,
+  ribbonkeepsake: ribbonkeepsake.url,
+  roundrug: roundrug.url,
+  climbingjasmine: climbingjasmine.url,
+  shelteredveranda: shelteredveranda.url,
+  applesack: applesack.url,
+  sunlitfootbridge: sunlitfootbridge.url,
+  crochetmotif: crochetmotif.url,
+  readingglasses: readingglasses.url,
+  blossomingbranch: blossomingbranch.url,
+  gardenarch: gardenarch.url,
+  scripturecorner: scripturecorner.url,
+  interwovenlinen: interwovenlinen.url,
+  woodencrosswall: woodencrosswall.url,
+  gardenboundary: gardenboundary.url,
+  stoneflowerbed: stoneflowerbed.url,
+  sheercanopy: sheercanopy.url,
+  porcelainpitcher: porcelainpitcher.url,
+  cottonthrow: cottonthrow.url,
+  limestonepath: limestonepath.url,
+  herbgarden: herbgarden.url,
+  simplemeal: simplemeal.url,
+  fruittreepatio: fruittreepatio.url,
+  distanthorizon: distanthorizon.url,
+  emptywindowseat: emptywindowseat.url,
+  memorychest: memorychest.url,
+  travelbag: travelbag.url,
+  reedssunlight: reedssunlight.url,
+  churchpews: churchpews.url,
+  peachmagnolia: peachmagnolia.url,
+  shellkeepsakes: shellkeepsakes.url,
+  barefigbranch: barefigbranch.url,
+  pumpkinsoup: pumpkinsoup.url,
+  apricotzinnias: apricotzinnias.url,
+  amberglassbowl: amberglassbowl.url,
+  wovenstool: wovenstool.url,
+  peachcamellia: peachcamellia.url,
+  openstonedoorway: openstonedoorway.url,
+  goldenestuary: goldenestuary.url,
+  petaloffering: petaloffering.url,
+  bedsideglow: bedsideglow.url,
+  sunlitcliff: sunlitcliff.url,
+  apronhook: apronhook.url,
+  uprightpiano: uprightpiano.url,
+  dailyteatray: dailyteatray.url,
+  circleofottomans: circleofottomans.url,
+  rosemaryroots: rosemaryroots.url,
+  softprayernook: softprayernook.url,
+  ivoryarchlight: ivoryarchlight.url,
+  blossomafterrain: blossomafterrain.url,
+  ivorypillow: ivorypillow.url,
+  linenbolster: linenbolster.url,
+  litdoorstep: litdoorstep.url,
+  harpstrings: harpstrings.url,
+  bedsideslippers: bedsideslippers.url,
+  pearsupper: pearsupper.url,
+  quiltnest: quiltnest.url,
+  curtainfolds: curtainfolds.url,
+  velvetheart: velvetheart.url,
+  ceramicwatercup: ceramicwatercup.url,
+  skylightstars: skylightstars.url,
+  rainybaywindow: rainybaywindow.url,
+  closedworkbasket: closedworkbasket.url,
+  orchidbud: orchidbud.url,
+  pairedlamps: pairedlamps.url,
+  olivewoodcross: olivewoodcross.url,
+  wovenheadboard: wovenheadboard.url,
+  peachribbonbundle: peachribbonbundle.url,
+  eveningthreshold: eveningthreshold.url,
+  softtissuebox: softtissuebox.url,
+  tearfulpetal: tearfulpetal.url,
+  linenbookcover: linenbookcover.url,
+  shelteredanemone: shelteredanemone.url,
+  woolenfold: woolenfold.url,
+  soupcrock: soupcrock.url,
+  sunlitbedrock: sunlitbedrock.url,
+  radiantvalley: radiantvalley.url,
+  warmcurvedsofa: warmcurvedsofa.url,
+  brassdoorhandle: brassdoorhandle.url,
+  almondsunrise: almondsunrise.url,
+  highrockhaven: highrockhaven.url,
+  sunlitmobile: sunlitmobile.url,
+  heirloomlocket: heirloomlocket.url,
+  crocuslight: crocuslight.url,
+  daybreakgarden: daybreakgarden.url,
+  restfuldaybed: restfuldaybed.url,
+  softcashmere: softcashmere.url,
+  pairedteabowls: pairedteabowls.url,
+  anchoredwoodenboat: anchoredwoodenboat.url,
+  shelteredloggia: shelteredloggia.url,
+  fruitfulpearbranch: fruitfulpearbranch.url,
+  porcelainbookstill: porcelainbookstill.url,
+  pearlbirthdaysetting: pearlbirthdaysetting.url,
+  silkscarfdaylight: silkscarfdaylight.url,
+  sunlitapricottart: sunlitapricottart.url,
+  creamfloatingpetals: creamfloatingpetals.url,
+  unopenedranunculus: unopenedranunculus.url,
+  peachcelebrationtable: peachcelebrationtable.url,
+  sunlitstonebridge: sunlitstonebridge.url,
+  breezylinenblossoms: breezylinenblossoms.url,
+  dahliapetaldetail: dahliapetaldetail.url,
+  heirloomteaservice: heirloomteaservice.url,
+  dawnterracesteps: dawnterracesteps.url,
+  unfinishedfloralstitch: unfinishedfloralstitch.url,
+  sharinghoneybiscuits: sharinghoneybiscuits.url,
+  goldenskybalcony: goldenskybalcony.url,
+  claypotnewleaves: claypotnewleaves.url,
+  harboranchorlight: harboranchorlight.url,
+  roundbirthdaygathering: roundbirthdaygathering.url,
+  honeybirthdaymadeleines: honeybirthdaymadeleines.url,
+  rosecoveredalcove: rosecoveredalcove.url,
+  openivoryshutters: openivoryshutters.url,
+  shelteredolivesapling: shelteredolivesapling.url,
+  sunrisevalleyvista: sunrisevalleyvista.url,
+  hilltopwalledgarden: hilltopwalledgarden.url,
+  ceramiclampdesk: ceramiclampdesk.url,
+  closedbiblelinen: closedbiblelinen.url,
+  woodenhandrailpath: woodenhandrailpath.url,
+  quietshorecove: quietshorecove.url,
+  sunlitcanyontrail: sunlitcanyontrail.url,
+  sandstonecottagebase: sandstonecottagebase.url,
+  courtyardchaircircle: courtyardchaircircle.url,
+  sturdycedardoor: sturdycedardoor.url,
+  shelteringbeechcanopy: shelteringbeechcanopy.url,
+  dawnprayerstool: dawnprayerstool.url,
+  marketbasketentry: marketbasketentry.url,
+  resilientcoastalpine: resilientcoastalpine.url,
+  warmbrothsetting: warmbrothsetting.url,
+  peachblanketarmrest: peachblanketarmrest.url,
+  goldenwalledcourtyard: goldenwalledcourtyard.url,
+  sunlitdollhouse: sunlitdollhouse.url,
+  peachteaconversation: peachteaconversation.url,
+  tidytoyshelf: tidytoyshelf.url,
+  woodenblocktower: woodenblocktower.url,
+  generationalquiltdetail: generationalquiltdetail.url,
+  devotionalbooklap: devotionalbooklap.url,
+  eldercaretray: eldercaretray.url,
+  growinggardensaplings: growinggardensaplings.url,
+  softnurserycradle: softnurserycradle.url,
+  threefloorcushions: threefloorcushions.url,
+  extrasuppersetting: extrasuppersetting.url,
+  phoneandflowers: phoneandflowers.url,
+  sharedkitchencleanup: sharedkitchencleanup.url,
+  citrusservingdish: citrusservingdish.url,
+  foldinglaundrytogether: foldinglaundrytogether.url,
+  modestcornmealmeal: modestcornmealmeal.url,
+  gardenresttray: gardenresttray.url,
+  homemademealdelivery: homemademealdelivery.url,
+  mixedceramiccups: mixedceramiccups.url,
+  branchingyoungappletree: branchingyoungappletree.url,
+  recoveryroomlight: recoveryroomlight.url,
+  rehabilitationrails: rehabilitationrails.url,
+  apricotgerberas: apricotgerberas.url,
+  linenwashstand: linenwashstand.url,
+  cliniccourtyard: cliniccourtyard.url,
+  shelteredwaterlily: shelteredwaterlily.url,
+  silverhandledcane: silverhandledcane.url,
+  peachlinenhem: peachlinenhem.url,
+  archedreadingniche: archedreadingniche.url,
+  newbegonialeaf: newbegonialeaf.url,
+  consultationchairs: consultationchairs.url,
+  prayerottomanlight: prayerottomanlight.url,
+  healthconsultdesk: healthconsultdesk.url,
+  peachhotwaterbottle: peachhotwaterbottle.url,
+  heirloomwickerrecliner: heirloomwickerrecliner.url,
+  sunlitcarecorridor: sunlitcarecorridor.url,
+  honeycombceramicplate: honeycombceramicplate.url,
+  ivoryprayerkneeler: ivoryprayerkneeler.url,
+  peachwalkingshoes: peachwalkingshoes.url,
+  goldenbamboogrove: goldenbamboogrove.url,
+  welcomingentrytable: welcomingentrytable.url,
+  braidedfabricring: braidedfabricring.url,
+  saltcellarsetting: saltcellarsetting.url,
+  differentflowerpots: differentflowerpots.url,
+  equalplacesetting: equalplacesetting.url,
+  heartshapedcookiesplate: heartshapedcookiesplate.url,
+  helpingwithshawl: helpingwithshawl.url,
+  vegetabledeliverybag: vegetabledeliverybag.url,
+  guestroomwashcloths: guestroomwashcloths.url,
+  rusticsharingloaf: rusticsharingloaf.url,
+  studybookpair: studybookpair.url,
+  coveredceramicdish: coveredceramicdish.url,
+  refreshmentglassjug: refreshmentglassjug.url,
+  threefoldcottoncord: threefoldcottoncord.url,
+  quietconversationcorner: quietconversationcorner.url,
+  patchworktablecenter: patchworktablecenter.url,
+  nasturtiumtrellis: nasturtiumtrellis.url,
+  blankenveloperose: blankenveloperose.url,
+  gardenwalkingpair: gardenwalkingpair.url,
+  peacefulchurchcourtyard: peacefulchurchcourtyard.url,
+  sunlitcompass: sunlitcompass.url,
+  lowprayerstool: lowprayerstool.url,
+  wrappedvegetablequiche: wrappedvegetablequiche.url,
+  acousticguitarsunlight: acousticguitarsunlight.url,
+  linenfootrest: linenfootrest.url,
+  chapelorganlight: chapelorganlight.url,
+  apricotbirdfeeder: apricotbirdfeeder.url,
+  peachconversationchairs: peachconversationchairs.url,
+  magnifyingglasslinen: magnifyingglasslinen.url,
+  goldenbayanchorage: goldenbayanchorage.url,
+  sharedorangepreserve: sharedorangepreserve.url,
+  flourdustedrollingpin: flourdustedrollingpin.url,
+  sunlitatticcorner: sunlitatticcorner.url,
+  freshwaterstonebasin: freshwaterstonebasin.url,
+  rootedrosemarypot: rootedrosemarypot.url,
+  morninggardengate: morninggardengate.url,
+  peachroseswindowledge: peachroseswindowledge.url,
+  ripeningpeachbranch: ripeningpeachbranch.url,
+  apricotjamgift: apricotjamgift.url,
+  sunlitmarigoldplanter: sunlitmarigoldplanter.url,
+  woodencompassworkspace: woodencompassworkspace.url,
+  finishedlinenpouches: finishedlinenpouches.url,
+  woolandflaxstudio: woolandflaxstudio.url,
+  balancedbrassscale: balancedbrassscale.url,
+  humbleceramicsetting: humbleceramicsetting.url,
+  gardenpotatoharvest: gardenpotatoharvest.url,
+  grainfilledscoop: grainfilledscoop.url,
+  workbootsatdawn: workbootsatdawn.url,
+  walletbesideofferingbowl: walletbesideofferingbowl.url,
+  crossaboveworkstation: crossaboveworkstation.url,
+  sortedbuttondrawers: sortedbuttondrawers.url,
+  polishedgardentools: polishedgardentools.url,
+  apricotsandcreamcup: apricotsandcreamcup.url,
+  cottoncardiganandmeal: cottoncardiganandmeal.url,
+  unfiredclaycups: unfiredclaycups.url,
+  cleaningcaddysunshine: cleaningcaddysunshine.url,
+  closedbakerycounter: closedbakerycounter.url,
+  tendedkitchengarden: tendedkitchengarden.url,
+  quietweavingloom: quietweavingloom.url,
+  simplebudgetenvelopes: simplebudgetenvelopes.url,
 };
 
 export type PhotoKey = keyof typeof photos;
