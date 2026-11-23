@@ -38,14 +38,14 @@ describe("Prayer audio share button", () => {
 
   it("shows a locked teaser linking to the VIP offer for free users", async () => {
     setVip(false);
-    renderWithRouter(PrayerShareButton);
+    renderWithRouter(() => <PrayerShareButton />);
     const link = await screen.findByRole("link", { name: /Compartilhar Oração em Áudio/ });
     expect(link.getAttribute("href")).toBe("/vip");
   });
 
   it("shows an active share button for VIP members", async () => {
     setVip(true);
-    renderWithRouter(PrayerShareButton);
+    renderWithRouter(() => <PrayerShareButton />);
     const button = await screen.findByRole("button", { name: /Compartilhar Oração em Áudio/ });
     expect(button).toBeTruthy();
   });
