@@ -10,7 +10,7 @@ import { useName, useVip } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { artworkGreeting } from "@/lib/artwork";
 
-const chipIds = ["todas", "bom-dia", "versiculos", "bencaos", "paz", "gratidao", "boa-noite", "conforto", "aniversario", "protecao", "familia", "cura", "amizade", "semana", "trabalho"] as const;
+const chipIds = ["todas", "bom-dia", "bencaos", "paz", "gratidao", "boa-noite", "conforto", "aniversario", "protecao", "familia", "cura", "amizade", "semana", "trabalho"] as const;
 
 export const Route = createFileRoute("/")({
   validateSearch: z.object({ cat: z.enum(chipIds).optional() }),

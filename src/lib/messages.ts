@@ -2,7 +2,6 @@ import { photos, type PhotoKey } from "./photos";
 
 export type CategoryId =
   | "bom-dia"
-  | "versiculos"
   | "bencaos"
   | "paz"
   | "gratidao"
@@ -28,7 +27,6 @@ export type Category = {
 
 export const categories: Category[] = [
   { id: "bom-dia", label: "Bom Dia", heading: "Mensagem de Bom Dia", related: "Mais mensagens de Bom Dia", vip: false },
-  { id: "versiculos", label: "Versículos", heading: "Mensagem de Fé", related: "Mais sobre Gratidão e Confiança", vip: false },
   { id: "bencaos", label: "Bênçãos", heading: "Mensagem de Bênção", related: "Mais Bênçãos para enviar", vip: false },
   { id: "paz", label: "Paz", heading: "Mensagem de Paz", related: "Mais sobre Paz e Descanso", vip: false },
   { id: "gratidao", label: "Gratidão", heading: "Mensagem de Gratidão", related: "Mais sobre Gratidão e Confiança", vip: false },
@@ -47,7 +45,6 @@ export const categories: Category[] = [
 export const homeChips: Array<CategoryId | "todas"> = [
   "todas",
   "bom-dia",
-  "versiculos",
   "bencaos",
   "paz",
   "protecao",
@@ -72,21 +69,21 @@ export type Message = {
 };
 
 export const messages: Message[] = [
-  { id: "misericordias-cada-manha", title: "Renovado a cada manhã", category: "versiculos", verse: "As misericórdias do Senhor são a causa de não sermos consumidos; elas se renovam a cada manhã.", reference: "Lamentações 3:22", caption: "Bom dia! ☀️ Hoje Deus te dá um novo começo, cheinho de misericórdia. Respire fundo, sorria e siga em frente. Você é muito amado(a)! 🌸", photo: "beach", baseShares: 3120 },
+  { id: "misericordias-cada-manha", title: "Renovado a cada manhã", category: "bom-dia", verse: "As misericórdias do Senhor são a causa de não sermos consumidos; elas se renovam a cada manhã.", reference: "Lamentações 3:22", caption: "Bom dia! ☀️ Hoje Deus te dá um novo começo, cheinho de misericórdia. Respire fundo, sorria e siga em frente. Você é muito amado(a)! 🌸", photo: "beach", baseShares: 3120 },
   { id: "caminhe-com-fe", title: "Caminhe com fé", category: "bom-dia", verse: "Porque andamos por fé, e não por vista.", reference: "2 Coríntios 5:7", caption: "Bom dia! 🌅 Mesmo sem enxergar o caminho todo, dê o primeiro passo com fé. Deus vai na frente abrindo portas. Tenha um dia lindo! 🙏", photo: "walkway", baseShares: 1874 },
   { id: "paz-no-coracao", title: "Paz no coração", category: "paz", verse: "Deixo-vos a paz, a minha paz vos dou; não vo-la dou como o mundo a dá.", reference: "João 14:27", caption: "Que a paz de Jesus encha o seu coração hoje 🕊️ Nada de aflição: Ele está no controle. Fica com Deus! 💛", photo: "autumn", baseShares: 1652 },
   { id: "deus-te-abencoe", title: "Deus te abençoe", category: "bencaos", verse: "O Senhor te abençoe e te guarde; o Senhor faça resplandecer o seu rosto sobre ti.", reference: "Números 6:24-25", caption: "Passando para deixar uma bênção pra você 🙌 Que o Senhor te guarde hoje e sempre, você e toda a sua família. Bom dia! 🌻", photo: "vehicle", baseShares: 2210 },
   { id: "um-novo-comeco", title: "Um novo começo", category: "bom-dia", verse: "Eis que faço uma coisa nova; agora sairá à luz.", reference: "Isaías 43:19", caption: "Bom dia! ✨ Hoje é dia de recomeçar. Deus está fazendo algo novo na sua vida. Acredite! 🌼", photo: "road", baseShares: 1433 },
-  { id: "entrega-o-teu-caminho", title: "Entrega teu caminho", category: "versiculos", verse: "Entrega o teu caminho ao Senhor; confia nele, e o mais Ele fará", reference: "Salmos 37:5", caption: "Bom dia, minha querida! 🌸 Que neste novo dia você entregue cada passo nas mãos de Deus. Confie, Ele cuida de tudo com amor. Um abraço apertado e uma manhã abençoada! ☀️", photo: "hills", baseShares: 2348, related: ["caminho-seguro", "grata-pelo-hoje", "louvor-da-manha"] },
-  { id: "caminho-seguro", title: "Caminho seguro", category: "versiculos", verse: "Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.", reference: "Salmos 119:105", caption: "Que a Palavra de Deus ilumine cada passo seu hoje 🕯️ Com Ele, o caminho é sempre seguro. Bom dia, querida! 🌸", photo: "lantern", baseShares: 987 },
+  { id: "entrega-o-teu-caminho", title: "Entrega teu caminho", category: "bencaos", verse: "Entrega o teu caminho ao Senhor; confia nele, e o mais Ele fará", reference: "Salmos 37:5", caption: "Bom dia, minha querida! 🌸 Que neste novo dia você entregue cada passo nas mãos de Deus. Confie, Ele cuida de tudo com amor. Um abraço apertado e uma manhã abençoada! ☀️", photo: "hills", baseShares: 2348, related: ["caminho-seguro", "grata-pelo-hoje", "louvor-da-manha"] },
+  { id: "caminho-seguro", title: "Caminho seguro", category: "bencaos", verse: "Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.", reference: "Salmos 119:105", caption: "Que a Palavra de Deus ilumine cada passo seu hoje 🕯️ Com Ele, o caminho é sempre seguro. Bom dia, querida! 🌸", photo: "lantern", baseShares: 987 },
   { id: "grata-pelo-hoje", title: "Grata pelo hoje", category: "gratidao", verse: "Este é o dia que fez o Senhor; regozijemo-nos e alegremo-nos nele.", reference: "Salmos 118:24", caption: "Bom dia! 💛 Hoje eu só quero agradecer: pela vida, pela família e por ter você por perto. Que seu dia seja cheio de alegria! ☀️", photo: "golden", baseShares: 1290 },
   { id: "louvor-da-manha", title: "Louvor da manhã", category: "gratidao", verse: "Tudo quanto tem fôlego louve ao Senhor. Louvai ao Senhor!", reference: "Salmos 150:6", caption: "Comece o dia louvando! 🙌 Enquanto houver fôlego, há motivo para agradecer. Bom dia e muitas bênçãos! 🌅", photo: "praise", baseShares: 1105 },
-  { id: "o-senhor-e-meu-pastor", title: "Nada me faltará", category: "versiculos", verse: "O Senhor é o meu pastor, nada me faltará.", reference: "Salmos 23:1", caption: "Bom dia! 🐑 Pode descansar: o Bom Pastor cuida de você e nada vai faltar. Um dia abençoado pra você! 💛", photo: "bible", baseShares: 4021 },
+  { id: "o-senhor-e-meu-pastor", title: "Nada me faltará", category: "paz", verse: "O Senhor é o meu pastor, nada me faltará.", reference: "Salmos 23:1", caption: "Bom dia! 🐑 Pode descansar: o Bom Pastor cuida de você e nada vai faltar. Um dia abençoado pra você! 💛", photo: "bible", baseShares: 4021 },
   { id: "flores-de-bom-dia", title: "Flores pra você", category: "bom-dia", verse: "Ele fez tudo formoso em seu tempo.", reference: "Eclesiastes 3:11", caption: "Bom dia, flor! 🌹 Te mandando essas rosas pra lembrar que Deus faz tudo lindo no tempo certo. Tenha uma manhã maravilhosa! ✨", photo: "roses", baseShares: 2760 },
   { id: "sol-da-justica", title: "Luz da manhã", category: "bom-dia", verse: "Mas para vós, que temeis o meu nome, nascerá o sol da justiça, trazendo salvação debaixo das suas asas.", reference: "Malaquias 4:2", caption: "O sol nasceu e com ele novas bênçãos pra sua vida ☀️ Bom dia com muito carinho! 🌻", photo: "wheat", baseShares: 1544 },
   { id: "cafe-com-deus", title: "Café com Deus", category: "bom-dia", verse: "Pela manhã ouvirás a minha voz, ó Senhor; pela manhã apresentarei a ti a minha oração.", reference: "Salmos 5:3", caption: "Bom dia! ☕ Antes do café, uma conversa com Deus. Que seu dia comece em oração e termine em gratidão 🙏", photo: "coffee", baseShares: 1987 },
-  { id: "forca-para-hoje", title: "Força para hoje", category: "versiculos", verse: "Tudo posso naquele que me fortalece.", reference: "Filipenses 4:13", caption: "Bom dia, guerreira! 💪 Você não está sozinha: Deus é a sua força. Hoje vai dar tudo certo! 🌸", photo: "mountain", baseShares: 3410 },
-  { id: "nao-temas", title: "Não temas", category: "versiculos", verse: "Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus.", reference: "Isaías 41:10", caption: "Se o coração apertar hoje, lembre: Deus está com você 🤍 Nada de medo! Bom dia e um abraço carinhoso 🌷", photo: "lake", baseShares: 2875 },
+  { id: "forca-para-hoje", title: "Força para hoje", category: "bom-dia", verse: "Tudo posso naquele que me fortalece.", reference: "Filipenses 4:13", caption: "Bom dia, guerreira! 💪 Você não está sozinha: Deus é a sua força. Hoje vai dar tudo certo! 🌸", photo: "mountain", baseShares: 3410 },
+  { id: "nao-temas", title: "Não temas", category: "paz", verse: "Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus.", reference: "Isaías 41:10", caption: "Se o coração apertar hoje, lembre: Deus está com você 🤍 Nada de medo! Bom dia e um abraço carinhoso 🌷", photo: "lake", baseShares: 2875 },
   { id: "bencao-do-alto", title: "Bênção do alto", category: "bencaos", verse: "Toda a boa dádiva e todo o dom perfeito vem do alto, descendo do Pai das luzes.", reference: "Tiago 1:17", caption: "Que hoje chovam bênçãos do céu sobre a sua casa 🌧️✨ Deus te abençoe grandemente! Bom dia! 💛", photo: "meadow", baseShares: 1322 },
   { id: "familia-abencoada", title: "Família abençoada", category: "bencaos", verse: "Eu e a minha casa serviremos ao Senhor.", reference: "Josué 24:15", caption: "Bom dia, família! 🏡 Que Deus abençoe cada um de nós hoje, nos guarde e nos mantenha unidos no amor. Amo vocês! ❤️", photo: "home", baseShares: 2654 },
   { id: "bencao-sem-medida", title: "Bênção sem medida", category: "bencaos", verse: "O Senhor te dará abundância de bens… abrirá o seu bom tesouro, o céu.", reference: "Deuteronômio 28:11-12", caption: "Que Deus abra as janelas do céu sobre a sua vida hoje 🙌 Saúde, paz e muito amor pra você! 🌻", photo: "orchard", baseShares: 1188 },
@@ -146,7 +143,7 @@ export const isLocked = (m: Message, vip: boolean) => !vip && categoryById(m.cat
 
 /** Card do Dia: the featured message for a date, rotating through free verses. */
 export function messageOfTheDay(date: Date): Message {
-  const pool = messages.filter((m) => !categoryById(m.category).vip && (m.category === "versiculos" || m.category === "bom-dia"));
+  const pool = messages.filter((m) => !categoryById(m.category).vip && m.category === "bom-dia");
   const start = new Date(2026, 10, 23).getTime();
   const day = Math.floor((date.getTime() - start) / 86_400_000);
   const idx = ((day % pool.length) + pool.length) % pool.length;

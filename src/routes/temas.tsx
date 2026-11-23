@@ -9,7 +9,7 @@ export const Route = createFileRoute("/temas")({
   head: () => ({
     meta: [
       { title: "Temas — Mensagens do Dia" },
-      { name: "description", content: "Bom dia, versículos, bênçãos, paz, gratidão, boa noite, conforto e aniversário: escolha o tema da sua mensagem." },
+      { name: "description", content: "Bom dia, bênçãos, paz, gratidão, boa noite, conforto e aniversário: escolha o tema da sua mensagem." },
       { property: "og:title", content: "Temas — Mensagens do Dia" },
       { property: "og:description", content: "Escolha o tema da mensagem para enviar no WhatsApp." },
       { property: "og:type", content: "website" },
