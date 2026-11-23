@@ -1,5 +1,5 @@
 import { toast } from "sonner";
-import prayer from "@/assets/oracao-da-manha.mp3.asset.json";
+import { prayerFor } from "./prayers";
 import { photoOf, shareText, type Message } from "./messages";
 import { recordShare } from "./store";
 import { artworkGreeting } from "./artwork";
@@ -164,33 +164,35 @@ export async function shareToWhatsApp(m: Message): Promise<void> {
   }
 }
 
-// Prayer audio ---------------------------------------------------------------
-let prayerFile: File | null = null;
-let prayerPending: Promise<File> | null = null;
+// Prayer audio -------// Prayer audio ---------------------------------------------------------------
+const prayerFiles = new Map<string, File>();
+const prayerPending = new Map<string, Promise<File>>();
 
-/** Fetches and caches the prayer audio before the click, keeping the user gesture. */
-export function preparePrayerAudio(): Promise<File> {
-  if (prayerFile) return Promise.resolve(prayerFile);
-  if (prayerPending) return prayerPending;
-  const task = fetch(prayer.url)
+/** Fetches and caches the message's prayer audio before the click, keeping the user gesture. */
+export function preparePrayerAudio(messageId?: string): Promise<File> {
+  const p = prayerFor(messageId);
+  const ready = prayerFiles.get(p.key);
+  if (ready) return Promise.resolve(ready);
+  const pending = prayerPending.get(p.key);
+  if (pending) return pending;
+  const task = fetch(p.url)
     .then((r) => {
       if (!r.ok) throw new Error("Falha ao carregar o áudio");
       return r.blob();
     })
     .then((b) => {
-      prayerFile = new File([b], "oracao-da-manha.mp3", { type: "audio/mpeg" });
-      return prayerFile;
+      const file = new File([b], p.filename, { type: "audio/mpeg" });
+      prayerFiles.set(p.key, file);
+      return file;
     })
-    .finally(() => {
-      prayerPending = null;
-    });
-  prayerPending = task;
+    .finally(() => prayerPending.delete(p.key));
+  prayerPending.set(p.key, task);
   return task;
 }
 
-export async function downloadPrayerAudio(): Promise<boolean> {
+export async function downloadPrayerAudio(messageId?: string): Promise<boolean> {
   try {
-    const file = await preparePrayerAudio();
+    const file = await preparePrayerAudio(messageId);
     const url = URL.createObjectURL(file);
     const a = document.createElement("a");
     a.href = url;
@@ -206,10 +208,10 @@ export async function downloadPrayerAudio(): Promise<boolean> {
   }
 }
 
-/** VIP perk: sends the 1-minute prayer as an audio attachment, or downloads it to attach manually. */
-export async function sharePrayerAudio(): Promise<void> {
-  const file = prayerFile;
-  const text = "🙏 Oração da Manhã · 1 minuto — Mensagens do Dia";
+/** VIP perk: sends the prayer as an audio attachment, or downloads it to attach manually. */
+export async function sharePrayerAudio(messageId?: string): Promise<void> {
+  const file = prayerFiles.get(prayerFor(messageId).key);
+  const text = "🙏 Oração do dia — Mensagens do Dia";
   if (file && navigator.share && navigator.canShare?.({ files: [file] })) {
     try {
       await navigator.share({ files: [file], text });
@@ -221,7 +223,7 @@ export async function sharePrayerAudio(): Promise<void> {
     }
   }
   // WhatsApp links can't carry audio; download it so the user can attach it.
-  if (await downloadPrayerAudio()) {
+  if (await downloadPrayerAudio(messageId)) {
     toast.success("Oração baixada!", {
       description: "Anexe o áudio na conversa do WhatsApp e envie para abençoar alguém 🙏",
       duration: 9000,

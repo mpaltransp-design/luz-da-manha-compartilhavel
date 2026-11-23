@@ -31,7 +31,7 @@ use the editor.
 
 ## Project rules
 - Client-only state (favorites, VIP simulation, name, share counts) lives in localStorage via `src/lib/store.ts` (useSyncExternalStore); no backend yet, so the app works offline-first without login.
-- The message catalog is static data in `src/lib/messages.ts`; photos and the prayer audio are Lovable Assets pointers under `src/assets/`.
+- The message catalog is static data in `src/lib/messages.ts`; photos and prayer audio are Lovable Assets pointers under `src/assets/`; per-message prayers live in `src/assets/oracoes/<message-id>.mp3.asset.json` and `src/lib/prayers.ts` falls back to the general prayer.
 - VIP purchase opens `VITE_HOTMART_CHECKOUT_URL` when set; otherwise it unlocks VIP locally for testing.
 - Artwork greetings are defined in `src/lib/artwork.ts` and reused on screen and in canvas exports to keep category salutations consistent.
 - Prepare image files before sharing clicks to retain native user activation; WhatsApp URL fallback downloads the attachment separately and never navigates the app iframe.

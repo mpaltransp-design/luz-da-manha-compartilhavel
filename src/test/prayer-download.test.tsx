@@ -103,3 +103,12 @@ describe("Prayer audio sharing", () => {
     expect(HTMLAnchorElement.prototype.click).not.toHaveBeenCalled();
   });
 });
+
+describe("Per-message prayers", () => {
+  it("uses the message's own prayer when recorded, else the general one", async () => {
+    const { prayerFor } = await import("@/lib/prayers");
+    expect(prayerFor("um-novo-comeco").filename).toBe("oracao-um-novo-comeco.mp3");
+    expect(prayerFor("conforto-perto").url).not.toBe(prayerFor("geral-inexistente").url);
+    expect(prayerFor("o-senhor-e-meu-pastor").filename).toBe("oracao-da-manha.mp3");
+  });
+});

@@ -75,8 +75,8 @@ function Detail() {
             >
               <HeartIcon filled={fav} className={cn("transition-transform active:scale-90", fav ? "text-destructive" : "text-ink-muted")} />
             </button>
-            <PrayerPlayer />
-            <PrayerDownloadButton />
+            <PrayerPlayer messageId={m.id} />
+            <PrayerDownloadButton messageId={m.id} />
           </div>
 
           <div className="mt-5 rounded-[var(--r-card)] border border-peach bg-white/80 p-5">
@@ -101,7 +101,7 @@ function Detail() {
             </WaButton>
           )}
           {!locked && <div className="mt-3"><DownloadImageButton m={m} /></div>}
-          <div className="mt-3"><PrayerShareButton /></div>
+          <div className="mt-3"><PrayerShareButton messageId={m.id} /></div>
         </div>
 
         <SectionTitle className="mt-8">{cat.related}</SectionTitle>
