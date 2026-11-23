@@ -13,7 +13,7 @@ import { artworkGreeting } from "@/lib/artwork";
 const chipIds = ["todas", "bom-dia", "bencaos", "paz", "gratidao", "boa-noite", "conforto", "aniversario", "protecao", "familia", "cura", "amizade", "semana", "trabalho"] as const;
 
 export const Route = createFileRoute("/")({
-  validateSearch: z.object({ cat: z.enum(chipIds).optional() }),
+  validateSearch: z.object({ cat: z.enum(chipIds).optional().catch(undefined) }),
   head: () => ({
     meta: [
       { title: "Mensagens do Dia — Bom dia! Espalhe amor hoje" },
