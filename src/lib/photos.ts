@@ -61,6 +61,26 @@ import haybales from "@/assets/photos/haybales.jpg.asset.json";
 import desk from "@/assets/photos/desk.jpg.asset.json";
 import pottery from "@/assets/photos/pottery.jpg.asset.json";
 import bread from "@/assets/photos/bread.jpg.asset.json";
+import dewflowers from "@/assets/photos/dewflowers.jpg.asset.json";
+import sunrisefield from "@/assets/photos/sunrisefield.jpg.asset.json";
+import birdsong from "@/assets/photos/birdsong.jpg.asset.json";
+import mountaindawn from "@/assets/photos/mountaindawn.jpg.asset.json";
+import cottagegarden from "@/assets/photos/cottagegarden.jpg.asset.json";
+import rivertree from "@/assets/photos/rivertree.jpg.asset.json";
+import rosebasket from "@/assets/photos/rosebasket.jpg.asset.json";
+import bluedoor from "@/assets/photos/bluedoor.jpg.asset.json";
+import calmriver from "@/assets/photos/calmriver.jpg.asset.json";
+import quietchair from "@/assets/photos/quietchair.jpg.asset.json";
+import stillpond from "@/assets/photos/stillpond.jpg.asset.json";
+import snowpine from "@/assets/photos/snowpine.jpg.asset.json";
+import breakfasttable from "@/assets/photos/breakfasttable.jpg.asset.json";
+import daisies from "@/assets/photos/daisies.jpg.asset.json";
+import handwriting from "@/assets/photos/handwriting.jpg.asset.json";
+import harvestbasket from "@/assets/photos/harvestbasket.jpg.asset.json";
+import starrynight from "@/assets/photos/starrynight.jpg.asset.json";
+import cozybed from "@/assets/photos/cozybed.jpg.asset.json";
+import moonlake from "@/assets/photos/moonlake.jpg.asset.json";
+import nightlantern from "@/assets/photos/nightlantern.jpg.asset.json";
 
 export const photos = {
   beach: beach.url,
@@ -125,6 +145,26 @@ export const photos = {
   desk: desk.url,
   pottery: pottery.url,
   bread: bread.url,
+  dewflowers: dewflowers.url,
+  sunrisefield: sunrisefield.url,
+  birdsong: birdsong.url,
+  mountaindawn: mountaindawn.url,
+  cottagegarden: cottagegarden.url,
+  rivertree: rivertree.url,
+  rosebasket: rosebasket.url,
+  bluedoor: bluedoor.url,
+  calmriver: calmriver.url,
+  quietchair: quietchair.url,
+  stillpond: stillpond.url,
+  snowpine: snowpine.url,
+  breakfasttable: breakfasttable.url,
+  daisies: daisies.url,
+  handwriting: handwriting.url,
+  harvestbasket: harvestbasket.url,
+  starrynight: starrynight.url,
+  cozybed: cozybed.url,
+  moonlake: moonlake.url,
+  nightlantern: nightlantern.url,
 };
 
 export type PhotoKey = keyof typeof photos;
