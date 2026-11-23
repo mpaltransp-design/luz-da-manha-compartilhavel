@@ -37,7 +37,7 @@ describe("approved V3 prayer voice", () => {
     }
     expect(prayerFor("unknown-message").url).toBe(general.url);
     for (const message of messages) {
-      expect(prayerFor(message.id).url).toContain(`oracao-${message.id}-v3.mp3`);
+      expect(prayerFor(message.id).url).toContain(`oracao-${message.id}-v3-musica.mp3`);
     }
   });
 });
