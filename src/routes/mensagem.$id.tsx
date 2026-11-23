@@ -2,12 +2,12 @@ import type React from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
-import { CopyIcon, HeartIcon, LockIcon, ShareUpIcon } from "@/components/icons";
+import { CopyIcon, HeartIcon, LockIcon } from "@/components/icons";
 import { DownloadImageButton, MessageImageViewer } from "@/components/MessageImageViewer";
 import { PrayerDownloadButton, PrayerPlayer } from "@/components/PrayerPlayer";
 import { categoryById, getMessage, isLocked, photoOf, relatedMessages } from "@/lib/messages";
 import { copyCaption, shareToWhatsApp } from "@/lib/share";
-import { toggleFavorite, useFavorites, useShareCount, useVip } from "@/lib/store";
+import { toggleFavorite, useFavorites, useVip } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/mensagem/$id")({
@@ -51,7 +51,6 @@ function Detail() {
   const vip = useVip();
   const favs = useFavorites();
   const fav = favs.includes(m.id);
-  const shares = useShareCount(m.id, m.baseShares);
   const locked = isLocked(m, vip);
 
   const onFav = () => {
@@ -78,9 +77,6 @@ function Detail() {
             </button>
             <PrayerPlayer />
             <PrayerDownloadButton />
-            <span className="flex shrink-0 items-center gap-1 pl-1 pr-2 text-[15px] font-bold text-ink-muted" aria-label={`${shares} compartilhamentos`}>
-              <ShareUpIcon size={18} /> {shares.toLocaleString("pt-BR")}
-            </span>
           </div>
 
           <div className="mt-5 rounded-[var(--r-card)] border border-peach bg-white/80 p-5">
