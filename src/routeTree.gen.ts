@@ -10,33 +10,91 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as FavoritosRouteImport } from './routes/favoritos'
+import { Route as PerfilRouteImport } from './routes/perfil'
+import { Route as TemasRouteImport } from './routes/temas'
+import { Route as VipRouteImport } from './routes/vip'
+import { Route as MensagemIdRouteImport } from './routes/mensagem.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FavoritosRoute = FavoritosRouteImport.update({
+  id: '/favoritos',
+  path: '/favoritos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PerfilRoute = PerfilRouteImport.update({
+  id: '/perfil',
+  path: '/perfil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemasRoute = TemasRouteImport.update({
+  id: '/temas',
+  path: '/temas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VipRoute = VipRouteImport.update({
+  id: '/vip',
+  path: '/vip',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MensagemIdRoute = MensagemIdRouteImport.update({
+  id: '/mensagem/$id',
+  path: '/mensagem/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/favoritos': typeof FavoritosRoute
+  '/perfil': typeof PerfilRoute
+  '/temas': typeof TemasRoute
+  '/vip': typeof VipRoute
+  '/mensagem/$id': typeof MensagemIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/favoritos': typeof FavoritosRoute
+  '/perfil': typeof PerfilRoute
+  '/temas': typeof TemasRoute
+  '/vip': typeof VipRoute
+  '/mensagem/$id': typeof MensagemIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/favoritos': typeof FavoritosRoute
+  '/perfil': typeof PerfilRoute
+  '/temas': typeof TemasRoute
+  '/vip': typeof VipRoute
+  '/mensagem/$id': typeof MensagemIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/favoritos' | '/perfil' | '/temas' | '/vip' | '/mensagem/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/favoritos' | '/perfil' | '/temas' | '/vip' | '/mensagem/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/favoritos'
+    | '/perfil'
+    | '/temas'
+    | '/vip'
+    | '/mensagem/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  FavoritosRoute: typeof FavoritosRoute
+  PerfilRoute: typeof PerfilRoute
+  TemasRoute: typeof TemasRoute
+  VipRoute: typeof VipRoute
+  MensagemIdRoute: typeof MensagemIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +106,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/favoritos': {
+      id: '/favoritos'
+      path: '/favoritos'
+      fullPath: '/favoritos'
+      preLoaderRoute: typeof FavoritosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/perfil': {
+      id: '/perfil'
+      path: '/perfil'
+      fullPath: '/perfil'
+      preLoaderRoute: typeof PerfilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/temas': {
+      id: '/temas'
+      path: '/temas'
+      fullPath: '/temas'
+      preLoaderRoute: typeof TemasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vip': {
+      id: '/vip'
+      path: '/vip'
+      fullPath: '/vip'
+      preLoaderRoute: typeof VipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mensagem/$id': {
+      id: '/mensagem/$id'
+      path: '/mensagem/$id'
+      fullPath: '/mensagem/$id'
+      preLoaderRoute: typeof MensagemIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  FavoritosRoute: FavoritosRoute,
+  PerfilRoute: PerfilRoute,
+  TemasRoute: TemasRoute,
+  VipRoute: VipRoute,
+  MensagemIdRoute: MensagemIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

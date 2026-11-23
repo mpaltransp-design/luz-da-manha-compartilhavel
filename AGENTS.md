@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Client-only state (favorites, VIP simulation, name, share counts) lives in localStorage via `src/lib/store.ts` (useSyncExternalStore); no backend yet, so the app works offline-first without login.
+- The message catalog is static data in `src/lib/messages.ts`; photos and the prayer audio are Lovable Assets pointers under `src/assets/`.
+- VIP purchase opens `VITE_HOTMART_CHECKOUT_URL` when set; otherwise it unlocks VIP locally for testing.
