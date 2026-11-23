@@ -109,6 +109,7 @@ describe("Per-message prayers", () => {
     const { prayerFor } = await import("@/lib/prayers");
     expect(prayerFor("um-novo-comeco").filename).toBe("oracao-um-novo-comeco.mp3");
     expect(prayerFor("conforto-perto").url).not.toBe(prayerFor("geral-inexistente").url);
-    expect(prayerFor("o-senhor-e-meu-pastor").filename).toBe("oracao-da-manha.mp3");
+    expect(prayerFor("mensagem-sem-audio").filename).toBe("oracao-da-manha.mp3");
+    expect(prayerFor("o-senhor-e-meu-pastor").filename).toBe("oracao-o-senhor-e-meu-pastor.mp3");
   });
 });
