@@ -31,6 +31,12 @@ import window from "@/assets/photos/window.jpg.asset.json";
 import whiterose from "@/assets/photos/whiterose.jpg.asset.json";
 import cake from "@/assets/photos/cake.jpg.asset.json";
 import bench from "@/assets/photos/bench.jpg.asset.json";
+import shelter from "@/assets/photos/shelter.jpg.asset.json";
+import gate from "@/assets/photos/gate.jpg.asset.json";
+import lighthouse from "@/assets/photos/lighthouse.jpg.asset.json";
+import hands from "@/assets/photos/hands.jpg.asset.json";
+import family from "@/assets/photos/family.jpg.asset.json";
+import table from "@/assets/photos/table.jpg.asset.json";
 
 export const photos = {
   beach: beach.url,
@@ -66,6 +72,12 @@ export const photos = {
   whiterose: whiterose.url,
   cake: cake.url,
   bench: bench.url,
+  shelter: shelter.url,
+  gate: gate.url,
+  lighthouse: lighthouse.url,
+  hands: hands.url,
+  family: family.url,
+  table: table.url,
 };
 
 export type PhotoKey = keyof typeof photos;

@@ -8,7 +8,9 @@ export type CategoryId =
   | "gratidao"
   | "boa-noite"
   | "conforto"
-  | "aniversario";
+  | "aniversario"
+  | "protecao"
+  | "familia";
 
 export type Category = {
   id: CategoryId;
@@ -29,6 +31,8 @@ export const categories: Category[] = [
   { id: "boa-noite", label: "Boa Noite", heading: "Mensagem de Boa Noite", related: "Mais mensagens de Boa Noite", vip: false },
   { id: "conforto", label: "Conforto & Luto", heading: "Mensagem de Conforto", related: "Mais palavras de Conforto", vip: true },
   { id: "aniversario", label: "Aniversário", heading: "Mensagem de Aniversário", related: "Mais mensagens de Aniversário", vip: true },
+  { id: "protecao", label: "Proteção", heading: "Mensagem de Proteção", related: "Mais sobre Proteção e Livramento", vip: false },
+  { id: "familia", label: "Família & Filhos", heading: "Oração pela Família", related: "Mais orações pela Família", vip: true },
 ];
 
 /** Chips on the home screen, in order. "todas" shows everything. */
@@ -38,6 +42,8 @@ export const homeChips: Array<CategoryId | "todas"> = [
   "versiculos",
   "bencaos",
   "paz",
+  "protecao",
+  "familia",
   "conforto",
 ];
 
@@ -86,6 +92,12 @@ export const messages: Message[] = [
   { id: "conforto-ressurreicao", title: "Esperança eterna", category: "conforto", verse: "Eu sou a ressurreição e a vida; quem crê em mim, ainda que esteja morto, viverá.", reference: "João 11:25", caption: "Nossa esperança está em Cristo 🤍 Que essa certeza traga paz ao seu coração. Meus sinceros sentimentos. 🕯️", photo: "lilies", baseShares: 812 },
   { id: "aniversario-dias", title: "Feliz aniversário", category: "aniversario", verse: "Ensina-nos a contar os nossos dias, de tal maneira que alcancemos corações sábios.", reference: "Salmos 90:12", caption: "Feliz aniversário! 🎉🎂 Que Deus te dê muitos anos de vida, saúde e alegria. Você é uma bênção! 💛", photo: "bouquet", baseShares: 2433 },
   { id: "aniversario-planos", title: "Planos de Deus", category: "aniversario", verse: "Porque eu bem sei os pensamentos que tenho a vosso respeito… pensamentos de paz, e não de mal, para vos dar o fim que esperais.", reference: "Jeremias 29:11", caption: "Parabéns, querida! 🎈 Que este novo ano seja cheio dos planos lindos de Deus pra sua vida. Muitas felicidades! 🌸", photo: "cake", baseShares: 1765 },
+  { id: "sob-suas-asas", title: "Sob as suas asas", category: "protecao", verse: "Ele te cobrirá com as suas penas, e debaixo das suas asas estarás seguro; a sua verdade será o teu escudo.", reference: "Salmos 91:4", caption: "Bom dia! 🕊️ Que hoje Deus cubra você e toda a sua casa debaixo das asas Dele. Nenhum mal vai te alcançar. Fica guardada! 🙏", photo: "shelter", baseShares: 1820 },
+  { id: "guarda-entrada-saida", title: "Ele guarda seus passos", category: "protecao", verse: "O Senhor guardará a tua entrada e a tua saída, desde agora e para sempre.", reference: "Salmos 121:8", caption: "Onde você for hoje, Deus vai junto 🌿 Que Ele guarde sua saída e sua volta pra casa. Um dia protegido e abençoado! 💛", photo: "gate", baseShares: 1460 },
+  { id: "nenhuma-arma-prosperara", title: "Nenhuma arma prosperará", category: "protecao", verse: "Nenhuma arma forjada contra ti prosperará.", reference: "Isaías 54:17", caption: "Declaro sobre a sua vida: nenhuma arma forjada contra você vai prosperar! 🛡️ Deus é o seu farol e a sua defesa. Bom dia! ✨", photo: "lighthouse", baseShares: 2034 },
+  { id: "filhos-heranca", title: "Filhos, herança do Senhor", category: "familia", verse: "Eis que os filhos são herança do Senhor, e o fruto do ventre o seu galardão.", reference: "Salmos 127:3", caption: "Hoje entrego nossos filhos e netos nas mãos de Deus 🙏 Que Ele guarde cada um, onde quer que estejam. Família é presente do céu! 💛", photo: "hands", baseShares: 1688 },
+  { id: "casa-sobre-a-rocha", title: "Casa sobre a rocha", category: "familia", verse: "Se o Senhor não edificar a casa, em vão trabalham os que a edificam.", reference: "Salmos 127:1", caption: "Que Deus seja o alicerce da nossa casa 🏡 Com Ele, nossa família fica firme em qualquer tempestade. Bom dia, família! ❤️", photo: "family", baseShares: 1342 },
+  { id: "amor-que-une", title: "O amor que une", category: "familia", verse: "E, sobre tudo isto, revesti-vos de amor, que é o vínculo da perfeição.", reference: "Colossenses 3:14", caption: "Que não falte amor, paciência e abraço na nossa família 🤗 Deus abençoe nossa mesa e nosso lar hoje e sempre! 🌻", photo: "table", baseShares: 1215 },
 ];
 
 export const categoryById = (id: CategoryId) =>
