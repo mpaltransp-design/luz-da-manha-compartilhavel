@@ -13,6 +13,24 @@ import bible from "@/assets/photos/bible.jpg.asset.json";
 import candle from "@/assets/photos/candle.jpg.asset.json";
 import meadow from "@/assets/photos/meadow.jpg.asset.json";
 import bouquet from "@/assets/photos/bouquet.jpg.asset.json";
+import hills from "@/assets/photos/hills.jpg.asset.json";
+import mountain from "@/assets/photos/mountain.jpg.asset.json";
+import lantern from "@/assets/photos/lantern.jpg.asset.json";
+import home from "@/assets/photos/home.jpg.asset.json";
+import sunflowers from "@/assets/photos/sunflowers.jpg.asset.json";
+import coffee from "@/assets/photos/coffee.jpg.asset.json";
+import peonies from "@/assets/photos/peonies.jpg.asset.json";
+import orchard from "@/assets/photos/orchard.jpg.asset.json";
+import hammock from "@/assets/photos/hammock.jpg.asset.json";
+import stream from "@/assets/photos/stream.jpg.asset.json";
+import moon from "@/assets/photos/moon.jpg.asset.json";
+import doves from "@/assets/photos/doves.jpg.asset.json";
+import lavender from "@/assets/photos/lavender.jpg.asset.json";
+import lilies from "@/assets/photos/lilies.jpg.asset.json";
+import window from "@/assets/photos/window.jpg.asset.json";
+import whiterose from "@/assets/photos/whiterose.jpg.asset.json";
+import cake from "@/assets/photos/cake.jpg.asset.json";
+import bench from "@/assets/photos/bench.jpg.asset.json";
 
 export const photos = {
   beach: beach.url,
@@ -30,6 +48,24 @@ export const photos = {
   candle: candle.url,
   meadow: meadow.url,
   bouquet: bouquet.url,
+  hills: hills.url,
+  mountain: mountain.url,
+  lantern: lantern.url,
+  home: home.url,
+  sunflowers: sunflowers.url,
+  coffee: coffee.url,
+  peonies: peonies.url,
+  orchard: orchard.url,
+  hammock: hammock.url,
+  stream: stream.url,
+  moon: moon.url,
+  doves: doves.url,
+  lavender: lavender.url,
+  lilies: lilies.url,
+  window: window.url,
+  whiterose: whiterose.url,
+  cake: cake.url,
+  bench: bench.url,
 };
 
 export type PhotoKey = keyof typeof photos;
