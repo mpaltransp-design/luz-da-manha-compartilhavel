@@ -2,12 +2,12 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { z } from "zod";
 import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
-import { HeartIcon, LockIcon, UserIcon } from "@/components/icons";
+import { HeartIcon, UserIcon } from "@/components/icons";
 import { MessageGrid } from "@/components/MessageTile";
-import { categoryById, filterMessages, homeChips, messageOfTheDay, photoOf, type CategoryId } from "@/lib/messages";
+import { HomeThemes } from "@/components/HomeThemes";
+import { categoryById, filterMessages, messageOfTheDay, photoOf, type CategoryId } from "@/lib/messages";
 import { shareToWhatsApp } from "@/lib/share";
 import { useName, useVip } from "@/lib/store";
-import { cn } from "@/lib/utils";
 import { artworkGreeting } from "@/lib/artwork";
 
 const chipIds = ["todas", "bom-dia", "bencaos", "paz", "gratidao", "boa-noite", "conforto", "aniversario", "protecao", "familia", "cura", "amizade", "semana", "trabalho"] as const;
@@ -43,7 +43,6 @@ function Home() {
   const daily = messageOfTheDay(now ?? new Date(2026, 10, 23));
   const hello = now ? greeting(now.getHours()) : "Bom dia";
 
-  const chips = homeChips.includes(chip) ? homeChips : [...homeChips, chip];
   const list = filterMessages(chip).filter((m) => chip !== "todas" || m.id !== daily.id);
 
   const pick = (id: CategoryId | "todas") => {
@@ -58,34 +57,11 @@ function Home() {
     <div className="pb-32">
       <AppHeader title={`${hello}${name ? `, ${name}` : ""}!`} subtitle="Espalhe amor hoje" />
 
-      <div className="no-scrollbar overflow-x-auto">
-        <Container className="flex gap-2 px-5 pb-1">
-          {chips.map((id) => {
-            const c = id === "todas" ? null : categoryById(id);
-            const locked = !!c?.vip && !vip;
-            const active = chip === id;
-            return (
-              <button
-                key={id}
-                type="button"
-                onClick={() => pick(id)}
-                aria-pressed={active}
-                className={cn(
-                  "inline-flex shrink-0 items-center gap-1.5 rounded-full px-4 py-2.5 text-[15px] font-semibold transition-colors",
-                  active ? "bg-gold text-white" : "bg-peach text-ink hover:bg-peach/80",
-                )}
-              >
-                {locked && <LockIcon size={14} className="text-gold" />}
-                {c ? c.label : "Todas"}
-              </button>
-            );
-          })}
-        </Container>
-      </div>
+      <HomeThemes active={chip} vip={vip} onSelect={pick} />
 
       <Container className="px-5">
         {chip === "todas" && (
-          <section className="mt-4 rounded-[var(--r-card)] bg-white p-3 shadow-sun md:max-w-[440px]">
+          <section className="mt-4 rounded-[var(--r-card)] bg-card p-3 shadow-sun md:max-w-[440px]">
             <Link to="/mensagem/$id" params={{ id: daily.id }} className="relative block aspect-[329/300] overflow-hidden rounded-[22px]">
               <img src={photoOf(daily)} alt="" className="h-full w-full object-cover object-bottom" />
               <span className="absolute inset-0 bg-gradient-to-b from-peach-soft/95 via-peach-soft/70 to-transparent" />

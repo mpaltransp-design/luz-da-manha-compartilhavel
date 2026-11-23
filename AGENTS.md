@@ -30,6 +30,7 @@ use the editor.
 <!-- LOVABLE:END -->
 
 ## Project rules
+- Home theme photo cards derive covers from the existing category catalog and delegate selection to the home page, preserving URL filters and VIP access checks.
 - Client-only state (favorites, VIP simulation, name, share counts) lives in localStorage via `src/lib/store.ts` (useSyncExternalStore); no backend yet, so the app works offline-first without login.
 - The message catalog is static data in `src/lib/messages.ts`; photos and prayer audio are Lovable Assets pointers under `src/assets/`; per-message prayers live in `src/assets/oracoes/<message-id>.mp3.asset.json` and `src/lib/prayers.ts` falls back to the general prayer.
 - VIP purchase opens `VITE_HOTMART_CHECKOUT_URL` when set; otherwise it unlocks VIP locally for testing.

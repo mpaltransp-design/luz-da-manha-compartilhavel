@@ -1,4 +1,5 @@
 # Ajustes de compartilhamento
+- [x] Exibir temas com fotos no topo do início e verificar filtros e acesso VIP em celular e computador.
 - [x] Incluir saudações nas artes e na imagem exportada.
 - [x] Ampliar a imagem mantendo compartilhar e baixar acessíveis.
 - [x] Compartilhar arquivo quando permitido e oferecer download nos demais casos.
