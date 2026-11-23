@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "ab931154-88c1-40a2-9789-0e60bda9603a",
+  "asset_id": "8e376aec-e1e2-4e32-bbe2-23ef4819f974",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/ab931154-88c1-40a2-9789-0e60bda9603a/oracao-obrigada-senhor-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/ab931154-88c1-40a2-9789-0e60bda9603a/oracao-obrigada-senhor-v3.mp3",
-  "original_filename": "oracao-obrigada-senhor-v3.mp3",
-  "size": 504960,
+  "url": "/__l5e/assets-v1/8e376aec-e1e2-4e32-bbe2-23ef4819f974/oracao-obrigada-senhor-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/8e376aec-e1e2-4e32-bbe2-23ef4819f974/oracao-obrigada-senhor-v3-musica.mp3",
+  "original_filename": "oracao-obrigada-senhor-v3-musica.mp3",
+  "size": 578349,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:24Z"
+  "created_at": "2026-11-23T11:25:46Z"
 }

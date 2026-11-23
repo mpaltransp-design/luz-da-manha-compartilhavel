@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "594e5c70-5bf6-4cbf-941d-3d72ab1dc249",
+  "asset_id": "f1bc6000-0bf1-46c9-b4f8-2d581b971372",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/594e5c70-5bf6-4cbf-941d-3d72ab1dc249/oracao-bencao-do-alto-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/594e5c70-5bf6-4cbf-941d-3d72ab1dc249/oracao-bencao-do-alto-v3.mp3",
-  "original_filename": "oracao-bencao-do-alto-v3.mp3",
-  "size": 428928,
+  "url": "/__l5e/assets-v1/f1bc6000-0bf1-46c9-b4f8-2d581b971372/oracao-bencao-do-alto-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/f1bc6000-0bf1-46c9-b4f8-2d581b971372/oracao-bencao-do-alto-v3-musica.mp3",
+  "original_filename": "oracao-bencao-do-alto-v3-musica.mp3",
+  "size": 502317,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:20Z"
+  "created_at": "2026-11-23T11:23:09Z"
 }

@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "8a29d946-37c3-46db-9da0-f3b6a6145e83",
+  "asset_id": "d7044fe2-d557-4ffc-890d-0278c39e2e0c",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/8a29d946-37c3-46db-9da0-f3b6a6145e83/oracao-bencao-sem-medida-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/8a29d946-37c3-46db-9da0-f3b6a6145e83/oracao-bencao-sem-medida-v3.mp3",
-  "original_filename": "oracao-bencao-sem-medida-v3.mp3",
-  "size": 469632,
+  "url": "/__l5e/assets-v1/d7044fe2-d557-4ffc-890d-0278c39e2e0c/oracao-bencao-sem-medida-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/d7044fe2-d557-4ffc-890d-0278c39e2e0c/oracao-bencao-sem-medida-v3-musica.mp3",
+  "original_filename": "oracao-bencao-sem-medida-v3-musica.mp3",
+  "size": 543021,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:20Z"
+  "created_at": "2026-11-23T11:23:17Z"
 }

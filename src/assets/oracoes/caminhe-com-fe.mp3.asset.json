@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "21a1d980-7d04-4c53-826a-be3fddf8571b",
+  "asset_id": "397cf183-3de5-4894-b554-656ea3190736",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/21a1d980-7d04-4c53-826a-be3fddf8571b/oracao-caminhe-com-fe-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/21a1d980-7d04-4c53-826a-be3fddf8571b/oracao-caminhe-com-fe-v3.mp3",
-  "original_filename": "oracao-caminhe-com-fe-v3.mp3",
-  "size": 413568,
+  "url": "/__l5e/assets-v1/397cf183-3de5-4894-b554-656ea3190736/oracao-caminhe-com-fe-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/397cf183-3de5-4894-b554-656ea3190736/oracao-caminhe-com-fe-v3-musica.mp3",
+  "original_filename": "oracao-caminhe-com-fe-v3-musica.mp3",
+  "size": 486957,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:14Z"
+  "created_at": "2026-11-23T11:23:41Z"
 }

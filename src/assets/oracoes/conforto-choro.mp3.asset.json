@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "eac926f1-244b-4c82-83da-e34211803857",
+  "asset_id": "cf8358e3-be6c-42e6-96a9-f7a83c5b9936",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/eac926f1-244b-4c82-83da-e34211803857/oracao-conforto-choro-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/eac926f1-244b-4c82-83da-e34211803857/oracao-conforto-choro-v3.mp3",
-  "original_filename": "oracao-conforto-choro-v3.mp3",
-  "size": 511488,
+  "url": "/__l5e/assets-v1/cf8358e3-be6c-42e6-96a9-f7a83c5b9936/oracao-conforto-choro-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/cf8358e3-be6c-42e6-96a9-f7a83c5b9936/oracao-conforto-choro-v3-musica.mp3",
+  "original_filename": "oracao-conforto-choro-v3-musica.mp3",
+  "size": 584877,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:28Z"
+  "created_at": "2026-11-23T11:24:01Z"
 }

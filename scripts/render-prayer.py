@@ -21,4 +21,6 @@ subprocess.run([
     "--set", f"voice={settings['voice']}", "--set", f"speed={settings['speed']}",
     "--set", f"instructions={settings['instructions']}",
     "--set", "response_format=mp3",
-], check=True)
+], check=True)# Every prayer ships with the shared background music: final file is <key>-musica.mp3.
+subprocess.run(["python3", str(ROOT / "scripts/mix-prayer.py"), str(folder / f"{key}.mp3"),
+                str(folder / f"{key}-musica.mp3")], check=True)

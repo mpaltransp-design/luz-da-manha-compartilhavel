@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "75ee86cb-1ce3-4d24-b6f0-73549eb3aa8c",
+  "asset_id": "2e0e4bbb-27f8-406c-b97a-2f794f64b457",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/75ee86cb-1ce3-4d24-b6f0-73549eb3aa8c/oracao-entrega-o-teu-caminho-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/75ee86cb-1ce3-4d24-b6f0-73549eb3aa8c/oracao-entrega-o-teu-caminho-v3.mp3",
-  "original_filename": "oracao-entrega-o-teu-caminho-v3.mp3",
-  "size": 476928,
+  "url": "/__l5e/assets-v1/2e0e4bbb-27f8-406c-b97a-2f794f64b457/oracao-entrega-o-teu-caminho-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/2e0e4bbb-27f8-406c-b97a-2f794f64b457/oracao-entrega-o-teu-caminho-v3-musica.mp3",
+  "original_filename": "oracao-entrega-o-teu-caminho-v3-musica.mp3",
+  "size": 550317,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:14Z"
+  "created_at": "2026-11-23T11:24:38Z"
 }

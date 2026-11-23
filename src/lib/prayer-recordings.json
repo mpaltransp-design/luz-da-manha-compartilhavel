@@ -255,5 +255,11 @@
       "key": "geral",
       "text": "Senhor, meu Deus, nesta manhã eu me coloco em tua presença. Obrigada pelo dom da vida e por mais uma oportunidade de recomeçar. Recebe minhas preocupações e acalma meu coração. Guia meus passos com sabedoria e ajuda-me a tratar cada pessoa com amor. Abençoa minha família, guarda quem está longe e sustenta quem enfrenta dificuldades. Que não faltem pão, cuidado e esperança em nossa casa. Ensina-me a reconhecer tua presença nas pequenas coisas e a repartir as bênçãos que recebo. Quando eu me cansar, segura minha mão. Quando eu tiver medo, lembra-me de que não estou sozinha. Recebe esta oração, Pai amado. Em nome de Jesus, amém."
     }
-  ]
+  ],
+  "music": {
+    "asset": "src/assets/fundo-musical-oracoes.mp3.asset.json",
+    "volume": 0.13,
+    "intro": 2.0,
+    "outro": 2.5
+  }
 }

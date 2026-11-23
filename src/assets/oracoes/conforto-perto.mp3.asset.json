@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "3a986284-de1a-47a6-bb10-48d5375579db",
+  "asset_id": "476c4af5-140e-47d2-add3-e8dbd78782db",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/3a986284-de1a-47a6-bb10-48d5375579db/oracao-conforto-perto-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/3a986284-de1a-47a6-bb10-48d5375579db/oracao-conforto-perto-v3.mp3",
-  "original_filename": "oracao-conforto-perto-v3.mp3",
-  "size": 402432,
+  "url": "/__l5e/assets-v1/476c4af5-140e-47d2-add3-e8dbd78782db/oracao-conforto-perto-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/476c4af5-140e-47d2-add3-e8dbd78782db/oracao-conforto-perto-v3-musica.mp3",
+  "original_filename": "oracao-conforto-perto-v3-musica.mp3",
+  "size": 475821,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:28Z"
+  "created_at": "2026-11-23T11:24:05Z"
 }

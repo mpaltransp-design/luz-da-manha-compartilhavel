@@ -35,4 +35,4 @@ use the editor.
 - VIP purchase opens `VITE_HOTMART_CHECKOUT_URL` when set; otherwise it unlocks VIP locally for testing.
 - Artwork greetings are defined in `src/lib/artwork.ts` and reused on screen and in canvas exports to keep category salutations consistent.
 - Prepare image files before sharing clicks to retain native user activation; WhatsApp URL fallback downloads the attachment separately and never navigates the app iframe.
-- Keep prayer recording texts and synthesis settings in a versioned manifest; render one recording per CLI call and replace asset pointers only after every recording validates, so the catalog uses one consistent voice without partial updates.
+- Keep prayer recording texts, synthesis settings and the shared background-music mix settings in a versioned manifest; upload only the music-mixed output; render one recording per CLI call and replace asset pointers only after every recording validates, so the catalog uses one consistent voice without partial updates.

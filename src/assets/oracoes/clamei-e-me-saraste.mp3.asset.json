@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "5b8a2411-aaa8-4742-b7fa-fbcedf8c0b1e",
+  "asset_id": "8877f960-abb3-46fb-891c-4c0e9386cc01",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/5b8a2411-aaa8-4742-b7fa-fbcedf8c0b1e/oracao-clamei-e-me-saraste-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/5b8a2411-aaa8-4742-b7fa-fbcedf8c0b1e/oracao-clamei-e-me-saraste-v3.mp3",
-  "original_filename": "oracao-clamei-e-me-saraste-v3.mp3",
-  "size": 445056,
+  "url": "/__l5e/assets-v1/8877f960-abb3-46fb-891c-4c0e9386cc01/oracao-clamei-e-me-saraste-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/8877f960-abb3-46fb-891c-4c0e9386cc01/oracao-clamei-e-me-saraste-v3-musica.mp3",
+  "original_filename": "oracao-clamei-e-me-saraste-v3-musica.mp3",
+  "size": 518445,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:40Z"
+  "created_at": "2026-11-23T11:23:50Z"
 }

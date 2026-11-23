@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "be46e68d-c132-43d0-9e81-b8b4ad5d7989",
+  "asset_id": "b6ba406d-423e-4ed8-9ae1-a08a7bccbebe",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/be46e68d-c132-43d0-9e81-b8b4ad5d7989/oracao-guarda-entrada-saida-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/be46e68d-c132-43d0-9e81-b8b4ad5d7989/oracao-guarda-entrada-saida-v3.mp3",
-  "original_filename": "oracao-guarda-entrada-saida-v3.mp3",
-  "size": 455424,
+  "url": "/__l5e/assets-v1/b6ba406d-423e-4ed8-9ae1-a08a7bccbebe/oracao-guarda-entrada-saida-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/b6ba406d-423e-4ed8-9ae1-a08a7bccbebe/oracao-guarda-entrada-saida-v3-musica.mp3",
+  "original_filename": "oracao-guarda-entrada-saida-v3-musica.mp3",
+  "size": 528813,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:33Z"
+  "created_at": "2026-11-23T11:25:07Z"
 }

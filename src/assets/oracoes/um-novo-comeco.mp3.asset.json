@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "4cff498e-1886-4da2-9968-0815868817e7",
+  "asset_id": "e809e547-a569-47da-8ccc-43484349973a",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/4cff498e-1886-4da2-9968-0815868817e7/oracao-um-novo-comeco-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/4cff498e-1886-4da2-9968-0815868817e7/oracao-um-novo-comeco-v3.mp3",
-  "original_filename": "oracao-um-novo-comeco-v3.mp3",
-  "size": 430464,
+  "url": "/__l5e/assets-v1/e809e547-a569-47da-8ccc-43484349973a/oracao-um-novo-comeco-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/e809e547-a569-47da-8ccc-43484349973a/oracao-um-novo-comeco-v3-musica.mp3",
+  "original_filename": "oracao-um-novo-comeco-v3-musica.mp3",
+  "size": 503853,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:14Z"
+  "created_at": "2026-11-23T11:26:28Z"
 }

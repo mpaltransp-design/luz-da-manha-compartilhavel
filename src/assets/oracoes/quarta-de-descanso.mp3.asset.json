@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "cb0efa75-01f0-46e8-8b1c-9edc61f5ef85",
+  "asset_id": "e0df2522-cefb-4f6b-a2e2-e4508ff2ea79",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/cb0efa75-01f0-46e8-8b1c-9edc61f5ef85/oracao-quarta-de-descanso-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/cb0efa75-01f0-46e8-8b1c-9edc61f5ef85/oracao-quarta-de-descanso-v3.mp3",
-  "original_filename": "oracao-quarta-de-descanso-v3.mp3",
-  "size": 521088,
+  "url": "/__l5e/assets-v1/e0df2522-cefb-4f6b-a2e2-e4508ff2ea79/oracao-quarta-de-descanso-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/e0df2522-cefb-4f6b-a2e2-e4508ff2ea79/oracao-quarta-de-descanso-v3-musica.mp3",
+  "original_filename": "oracao-quarta-de-descanso-v3-musica.mp3",
+  "size": 594477,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:47Z"
+  "created_at": "2026-11-23T11:26:08Z"
 }

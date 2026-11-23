@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "5981fede-bf4e-4401-b44d-471000edad17",
+  "asset_id": "10265522-9ae9-43c0-9249-def793c9bc29",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/5981fede-bf4e-4401-b44d-471000edad17/oracao-aniversario-alegria-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/5981fede-bf4e-4401-b44d-471000edad17/oracao-aniversario-alegria-v3.mp3",
-  "original_filename": "oracao-aniversario-alegria-v3.mp3",
-  "size": 480000,
+  "url": "/__l5e/assets-v1/10265522-9ae9-43c0-9249-def793c9bc29/oracao-aniversario-alegria-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/10265522-9ae9-43c0-9249-def793c9bc29/oracao-aniversario-alegria-v3-musica.mp3",
+  "original_filename": "oracao-aniversario-alegria-v3-musica.mp3",
+  "size": 553389,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:36Z"
+  "created_at": "2026-11-23T11:22:49Z"
 }

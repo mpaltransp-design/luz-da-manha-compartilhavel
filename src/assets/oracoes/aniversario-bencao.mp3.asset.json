@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "c262a58d-a703-43f6-9866-6a64d6dcaff0",
+  "asset_id": "8224731c-7294-4c0d-a966-1579e0044970",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/c262a58d-a703-43f6-9866-6a64d6dcaff0/oracao-aniversario-bencao-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/c262a58d-a703-43f6-9866-6a64d6dcaff0/oracao-aniversario-bencao-v3.mp3",
-  "original_filename": "oracao-aniversario-bencao-v3.mp3",
-  "size": 397056,
+  "url": "/__l5e/assets-v1/8224731c-7294-4c0d-a966-1579e0044970/oracao-aniversario-bencao-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/8224731c-7294-4c0d-a966-1579e0044970/oracao-aniversario-bencao-v3-musica.mp3",
+  "original_filename": "oracao-aniversario-bencao-v3-musica.mp3",
+  "size": 470445,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:37Z"
+  "created_at": "2026-11-23T11:22:53Z"
 }

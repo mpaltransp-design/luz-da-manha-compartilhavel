@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "76f4f8da-b90d-48bb-821f-5c7f3076d940",
+  "asset_id": "2c56182b-90be-404d-90c8-14bff7723e94",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/76f4f8da-b90d-48bb-821f-5c7f3076d940/oracao-conforto-ressurreicao-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/76f4f8da-b90d-48bb-821f-5c7f3076d940/oracao-conforto-ressurreicao-v3.mp3",
-  "original_filename": "oracao-conforto-ressurreicao-v3.mp3",
-  "size": 432768,
+  "url": "/__l5e/assets-v1/2c56182b-90be-404d-90c8-14bff7723e94/oracao-conforto-ressurreicao-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/2c56182b-90be-404d-90c8-14bff7723e94/oracao-conforto-ressurreicao-v3-musica.mp3",
+  "original_filename": "oracao-conforto-ressurreicao-v3-musica.mp3",
+  "size": 506157,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:28Z"
+  "created_at": "2026-11-23T11:24:11Z"
 }

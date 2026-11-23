@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "8e349133-d5b9-4fd6-a810-17d60f1631c6",
+  "asset_id": "5b7e78af-6dae-43c9-bd4e-2d239c31629a",
   "project_id": "e890e324-806c-4abe-a0a3-f4f0178c107d",
-  "url": "/__l5e/assets-v1/8e349133-d5b9-4fd6-a810-17d60f1631c6/oracao-boa-noite-em-paz-v3.mp3",
-  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/8e349133-d5b9-4fd6-a810-17d60f1631c6/oracao-boa-noite-em-paz-v3.mp3",
-  "original_filename": "oracao-boa-noite-em-paz-v3.mp3",
-  "size": 471168,
+  "url": "/__l5e/assets-v1/5b7e78af-6dae-43c9-bd4e-2d239c31629a/oracao-boa-noite-em-paz-v3-musica.mp3",
+  "r2_key": "a/v1/e890e324-806c-4abe-a0a3-f4f0178c107d/5b7e78af-6dae-43c9-bd4e-2d239c31629a/oracao-boa-noite-em-paz-v3-musica.mp3",
+  "original_filename": "oracao-boa-noite-em-paz-v3-musica.mp3",
+  "size": 544557,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-23T04:07:24Z"
+  "created_at": "2026-11-23T11:23:24Z"
 }

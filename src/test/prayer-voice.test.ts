@@ -31,7 +31,7 @@ describe("approved V3 prayer voice", () => {
     expect(assets.length).toBe(messages.length + 1);
     expect(new Set(assets.map((p) => p.url)).size).toBe(assets.length);
     for (const asset of assets) {
-      expect(asset.original_filename.endsWith("-v3.mp3")).toBe(true);
+      expect(asset.original_filename.endsWith("-v3-musica.mp3")).toBe(true);
       expect(asset.content_type).toBe("audio/mpeg");
       expect(asset.size).toBeGreaterThan(10_000);
     }
@@ -39,5 +39,14 @@ describe("approved V3 prayer voice", () => {
     for (const message of messages) {
       expect(prayerFor(message.id).url).toContain(`oracao-${message.id}-v3.mp3`);
     }
+  });
+});
+import manifestWithMusic from "@/lib/prayer-recordings.json";
+import { describe as d2, expect as e2, it as i2 } from "vitest";
+d2("background music", () => {
+  i2("every prayer uses the shared background music mix", () => {
+    const m = (manifestWithMusic as { music?: { asset: string; volume: number } }).music;
+    e2(m?.asset).toBe("src/assets/fundo-musical-oracoes.mp3.asset.json");
+    e2(m!.volume).toBeLessThan(0.3);
   });
 });
