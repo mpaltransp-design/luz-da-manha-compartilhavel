@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { AppHeader, Container, SectionTitle, WaButton } from "@/components/chrome";
 import { CopyIcon, HeartIcon, LockIcon, ShareUpIcon } from "@/components/icons";
 import { DownloadImageButton, MessageImageViewer } from "@/components/MessageImageViewer";
-import { PrayerPlayer } from "@/components/PrayerPlayer";
+import { PrayerDownloadButton, PrayerPlayer } from "@/components/PrayerPlayer";
 import { categoryById, getMessage, isLocked, photoOf, relatedMessages } from "@/lib/messages";
 import { copyCaption, shareToWhatsApp } from "@/lib/share";
 import { toggleFavorite, useFavorites, useShareCount, useVip } from "@/lib/store";
@@ -77,6 +77,7 @@ function Detail() {
               <HeartIcon filled={fav} className={cn("transition-transform active:scale-90", fav ? "text-destructive" : "text-ink-muted")} />
             </button>
             <PrayerPlayer />
+            <PrayerDownloadButton />
             <span className="flex shrink-0 items-center gap-1 pl-1 pr-2 text-[15px] font-bold text-ink-muted" aria-label={`${shares} compartilhamentos`}>
               <ShareUpIcon size={18} /> {shares.toLocaleString("pt-BR")}
             </span>

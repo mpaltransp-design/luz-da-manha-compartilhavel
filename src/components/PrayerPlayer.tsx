@@ -1,5 +1,7 @@
 import { useNavigate } from "@tanstack/react-router";
+import { Download } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
 import prayer from "@/assets/oracao-da-manha.mp3.asset.json";
 import { LockIcon, PauseIcon, PlayIcon } from "./icons";
 import { useVip } from "@/lib/store";
@@ -68,6 +70,54 @@ export function PrayerPlayer() {
           setTime(0);
         }}
       />
+    </button>
+  );
+}
+
+/** VIP-only button that downloads the 1-minute prayer audio as an .mp3 file. */
+export function PrayerDownloadButton() {
+  const vip = useVip();
+  const [blob, setBlob] = useState<Blob | null>(null);
+
+  useEffect(() => {
+    if (!vip) return;
+    let alive = true;
+    fetch(prayer.url)
+      .then((r) => r.blob())
+      .then((b) => {
+        if (alive) setBlob(b);
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [vip]);
+
+  if (!vip) return null;
+
+  const download = () => {
+    if (!blob) return;
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "oracao-da-manha.mp3";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30_000);
+    toast.success("Oração baixada! Envie no WhatsApp 🙏");
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={download}
+      disabled={!blob}
+      aria-label="Baixar oração em áudio"
+      title="Baixar oração em áudio"
+      className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-full bg-white text-ink-muted transition-transform active:scale-90 disabled:opacity-50"
+    >
+      <Download size={20} />
     </button>
   );
 }
