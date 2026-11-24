@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T19:56:36.765Z",
+  "updated_at": "2026-11-24T19:57:50.332Z",
   "messages": [
     {
       "role": "user",
@@ -145,6 +145,15 @@
     {
       "role": "assistant",
       "text": "Para gerar as imagens e as vozes, preciso saber **qual conteúdo e estilo você quer**. Posso escolher os temas por você; nesse caso, só preciso de uma referência visual do app para manter a identidade.\n\nTambém preciso confirmar o escopo: são **5 imagens de Bom Dia**, cada uma com uma oração e áudio de voz? Se sim, diga se prefere voz feminina ou masculina e algum estilo de narração, como calma e acolhedora.\n\nOs scripts e o mapeamento já mencionados ajudam a definir o formato dos áudios. Não consigo confirmar o conteúdo dos arquivos grandes do catálogo e do manifesto porque eles não estão disponíveis para leitura nesta conversa."
+    },
+    {
+      "role": "user",
+      "text": "import general from \"@/assets/oracao-da-manha.mp3.asset.json\";\n\ntype Pointer = { url: string };\nconst files = import.meta.glob<Pointer>(\"@/assets/oracoes/*.mp3.asset.json\", { eager: true, import: \"default\" });\n\n/** Message-specific prayer audio, keyed by message id. */\nconst byMessage: Record<string, string> = {};\nfor (const [path, p] of Object.entries(files)) {\n  const id = path.split(\"/\").pop()!.replace(\".mp3.asset.json\", \"\");\n  byMessage[id] = p.url;\n}\n\nexport type Prayer = { key: string; url: string; filename: string };\n\n/** Returns the prayer recorded for this message, or the general morning prayer. */\nexport function prayerFor(messageId?: string): Prayer {\n  const url = messageId ? byMessage[messageId] : undefined;\n  if (messageId && url) return { key: messageId, url, filename: `oracao-${messageId}.mp3` };\n  return { key: \"geral\", url: general.url, filename: \"oracao-da-manha.mp3\" };\n}\n\nexport function hasOwnPrayer(messageId: string): boolean {\n  return messageId in byMessage;\n}",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Esse código confirma como o app associa os áudios às mensagens: cada oração específica precisa ter um arquivo `.mp3.asset.json` em `src/assets/oracoes/` com o ID da mensagem no nome. Se não houver um arquivo correspondente, o app usa o áudio geral da manhã.\n\nPara preparar as cinco imagens e vozes que você mencionou, ainda falta definir ou confirmar:\n\n- **Escopo:** são cinco imagens de “Bom Dia”, cada uma com sua própria oração e narração?\n- **Referência visual:** uma imagem existente do app para manter o estilo.\n- **Voz:** feminina ou masculina e o tom desejado, por exemplo, calmo e acolhedor.\n- **Mensagens:** quais IDs do catálogo devem receber os áudios, ou autorização para escolher cinco.\n\nO trecho enviado explica o mapeamento, mas não inclui os IDs nem o conteúdo das orações."
     }
   ]
 }
