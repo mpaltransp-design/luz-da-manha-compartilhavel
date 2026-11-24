@@ -1,3 +1,17 @@
+import sunrisedelphinium from "@/assets/photos/sunrisedelphinium.jpg.asset.json";
+import morningcanaliris from "@/assets/photos/morningcanaliris.jpg.asset.json";
+import fuchsiamorning from "@/assets/photos/fuchsiamorning.jpg.asset.json";
+import whitecosmosdew from "@/assets/photos/whitecosmosdew.jpg.asset.json";
+import silverbirchpath from "@/assets/photos/silverbirchpath.jpg.asset.json";
+import lotuspondsunrise from "@/assets/photos/lotuspondsunrise.jpg.asset.json";
+import coralpoppieshill from "@/assets/photos/coralpoppieshill.jpg.asset.json";
+import snowdropstonewall from "@/assets/photos/snowdropstonewall.jpg.asset.json";
+import pinkheathercoast from "@/assets/photos/pinkheathercoast.jpg.asset.json";
+import amaryllisdaylight from "@/assets/photos/amaryllisdaylight.jpg.asset.json";
+import jacarandameadow from "@/assets/photos/jacarandameadow.jpg.asset.json";
+import dahliagardensteps from "@/assets/photos/dahliagardensteps.jpg.asset.json";
+import churchgardenhydrangea from "@/assets/photos/churchgardenhydrangea.jpg.asset.json";
+import sunlitsweetpeas from "@/assets/photos/sunlitsweetpeas.jpg.asset.json";
 import beach from "@/assets/photos/beach.jpg.asset.json";
 import walkway from "@/assets/photos/walkway.jpg.asset.json";
 import autumn from "@/assets/photos/autumn.jpg.asset.json";
@@ -396,6 +410,21 @@ import quietweavingloom from "@/assets/photos/quietweavingloom.jpg.asset.json";
 import simplebudgetenvelopes from "@/assets/photos/simplebudgetenvelopes.jpg.asset.json";
 
 export const photos = {
+  sunrisedelphinium: sunrisedelphinium.url,
+  morningcanaliris: morningcanaliris.url,
+  fuchsiamorning: fuchsiamorning.url,
+  whitecosmosdew: whitecosmosdew.url,
+  silverbirchpath: silverbirchpath.url,
+  lotuspondsunrise: lotuspondsunrise.url,
+  coralpoppieshill: coralpoppieshill.url,
+  snowdropstonewall: snowdropstonewall.url,
+  pinkheathercoast: pinkheathercoast.url,
+  amaryllisdaylight: amaryllisdaylight.url,
+  jacarandameadow: jacarandameadow.url,
+  dahliagardensteps: dahliagardensteps.url,
+  churchgardenhydrangea: churchgardenhydrangea.url,
+  sunlitsweetpeas: sunlitsweetpeas.url,
+
   beach: beach.url,
   walkway: walkway.url,
   autumn: autumn.url,

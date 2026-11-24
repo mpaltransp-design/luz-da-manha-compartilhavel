@@ -1,3 +1,7 @@
+# Novas mensagens de Dias da Semana
+- [x] Criar 14 fotos, mensagens e orações inéditas, duas por dia, com voz V3 e música habitual.
+- [x] Integrar e verificar exclusividade, saudações e reprodução VIP (14 áudios reproduzidos; 46 testes passaram).
+
 # Ajustes de compartilhamento
 - [x] Exibir temas com fotos no topo do início e verificar filtros e acesso VIP em celular e computador.
 - [x] Incluir saudações nas artes e na imagem exportada.
