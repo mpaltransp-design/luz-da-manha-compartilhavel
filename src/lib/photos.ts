@@ -408,6 +408,11 @@ import closedbakerycounter from "@/assets/photos/closedbakerycounter.jpg.asset.j
 import tendedkitchengarden from "@/assets/photos/tendedkitchengarden.jpg.asset.json";
 import quietweavingloom from "@/assets/photos/quietweavingloom.jpg.asset.json";
 import simplebudgetenvelopes from "@/assets/photos/simplebudgetenvelopes.jpg.asset.json";
+import morningdewgarden from "@/assets/photos/morningdewgarden.jpg.asset.json";
+import dawnlavenderfield from "@/assets/photos/dawnlavenderfield.jpg.asset.json";
+import auroramountainmist from "@/assets/photos/auroramountainmist.jpg.asset.json";
+import sunlitpinetrail from "@/assets/photos/sunlitpinetrail.jpg.asset.json";
+import goldenpasturefence from "@/assets/photos/goldenpasturefence.jpg.asset.json";
 
 export const photos = {
   sunrisedelphinium: sunrisedelphinium.url,
@@ -424,7 +429,6 @@ export const photos = {
   dahliagardensteps: dahliagardensteps.url,
   churchgardenhydrangea: churchgardenhydrangea.url,
   sunlitsweetpeas: sunlitsweetpeas.url,
-
   beach: beach.url,
   walkway: walkway.url,
   autumn: autumn.url,
@@ -819,6 +823,11 @@ export const photos = {
   tendedkitchengarden: tendedkitchengarden.url,
   quietweavingloom: quietweavingloom.url,
   simplebudgetenvelopes: simplebudgetenvelopes.url,
+  morningdewgarden: morningdewgarden.url,
+  dawnlavenderfield: dawnlavenderfield.url,
+  auroramountainmist: auroramountainmist.url,
+  sunlitpinetrail: sunlitpinetrail.url,
+  goldenpasturefence: goldenpasturefence.url,
 };
 
 export type PhotoKey = keyof typeof photos;
