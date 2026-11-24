@@ -34,6 +34,6 @@ use the editor.
 - Client-only state (favorites, VIP simulation, name, share counts) lives in localStorage via `src/lib/store.ts` (useSyncExternalStore); no backend yet, so the app works offline-first without login.
 - The message catalog is static data in `src/lib/messages.ts`; photos and prayer audio are Lovable Assets pointers under `src/assets/`; per-message prayers live in `src/assets/oracoes/<message-id>.mp3.asset.json` and `src/lib/prayers.ts` falls back to the general prayer.
 - VIP purchase opens `VITE_HOTMART_CHECKOUT_URL` when set; otherwise it unlocks VIP locally for testing.
-- Artwork greetings are defined in `src/lib/artwork.ts` and reused on screen and in canvas exports to keep category salutations consistent.
+- Artwork greetings are defined in `src/lib/artwork.ts` and reused on screen and in canvas exports; weekday greetings derive from each message's title rather than the current clock to keep saved artwork consistent and reusable.
 - Prepare image files before sharing clicks to retain native user activation; WhatsApp URL fallback downloads the attachment separately and never navigates the app iframe.
 - Keep prayer recording texts, synthesis settings and the shared background-music mix settings in a versioned manifest; upload only the music-mixed output; render one recording per CLI call and replace asset pointers only after every recording validates, so the catalog uses one consistent voice without partial updates.
