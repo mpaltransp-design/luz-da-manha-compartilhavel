@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T19:53:56.476Z",
+  "updated_at": "2026-11-24T19:54:30.174Z",
   "messages": [
     {
       "role": "user",
@@ -91,6 +91,15 @@
     {
       "role": "assistant",
       "text": "Esse script de mixagem já está descrito na conversa. Para seguir com as 5 imagens de **Bom Dia** e suas orações, ainda preciso dos temas das imagens — ou posso escolher cenas variadas — e de uma referência ao padrão visual e textual usado no app."
+    },
+    {
+      "role": "user",
+      "text": "Script de Renderização (scripts/render-prayer.py)",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Recebi o script de renderização. Ele busca uma oração pelo `key` no manifesto, gera o áudio de voz pura com as configurações de síntese e depois chama `mix-prayer.py` para criar a versão com música.\n\nPara montar as cinco imagens com orações coerentes, posso escolher cenas variadas de Bom Dia. Ainda preciso de uma referência visual do app para reproduzir o padrão das imagens; o script de áudio, por si só, não mostra esse padrão."
     }
   ]
 }
