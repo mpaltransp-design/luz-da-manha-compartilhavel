@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T19:57:50.332Z",
+  "updated_at": "2026-11-24T19:59:14.312Z",
   "messages": [
     {
       "role": "user",
@@ -154,6 +154,15 @@
     {
       "role": "assistant",
       "text": "Esse código confirma como o app associa os áudios às mensagens: cada oração específica precisa ter um arquivo `.mp3.asset.json` em `src/assets/oracoes/` com o ID da mensagem no nome. Se não houver um arquivo correspondente, o app usa o áudio geral da manhã.\n\nPara preparar as cinco imagens e vozes que você mencionou, ainda falta definir ou confirmar:\n\n- **Escopo:** são cinco imagens de “Bom Dia”, cada uma com sua própria oração e narração?\n- **Referência visual:** uma imagem existente do app para manter o estilo.\n- **Voz:** feminina ou masculina e o tom desejado, por exemplo, calmo e acolhedor.\n- **Mensagens:** quais IDs do catálogo devem receber os áudios, ou autorização para escolher cinco.\n\nO trecho enviado explica o mapeamento, mas não inclui os IDs nem o conteúdo das orações."
+    },
+    {
+      "role": "user",
+      "text": "{\n  \"version\": 3,\n  \"synthesis\": {\n    \"model\": \"openai/gpt-4o-mini-tts\",\n    \"voice\": \"shimmer\",\n    \"speed\": 1.0,\n    \"instructions\": \"Fale em português brasileiro, com voz feminina suave, serena e acolhedora. Ore de verdade, dirigindo-se a Deus com súplica sincera e reverente, emoção contida e fé. Ritmo natural, um pouco mais ágil do que uma leitura lenta, sem pressa. Faça pausas breves e naturais de respiração. Use entonação de oração pessoal, carinhosa e sentida, não de locução, propaganda ou leitura mecânica. Não dramatize, não chore e não sussurre. Mantenha clareza e volume consistente, sem música.\"\n  },\n  \"music\": {\n    \"asset\": \"src/assets/fundo-musical-oracoes.mp3.asset.json\",\n    \"volume\": 0.13,\n    \"intro\": 2.0,\n    \"outro\": 2.5\n  },\n  \"recordings\": [\n    {\n      \"key\": \"misericordias-cada-manha\",\n      \"text\": \"Senhor, meu Deus, tua Palavra nos lembra: As misericórdias do Senhor são a causa de não sermos consumidos; elas se renovam a cada manhã. Renova em mim a esperança. Perdoa minhas falhas e ajuda-me a acolher este dia sem carregar as culpas de ontem. Que eu reconheça tua misericórdia em cada pequeno cuidado. Recebe esta oração, Pai amado. Em nome de Jesus, amém.\"\n    },\n    {\n      \"key\": \"semana-segunda-passos-ensinados\",\n      \"text\": \"Senhor Deus, no início desta segunda-feira, venho te pedir direção. Tua Palavra diz: Faze-me saber os teus caminhos, Senhor; ensina-me as tuas veredas. Guarda meus passos de agir na pressa e ajuda-me a acolher as tarefas com paciência. Que o teu Espírito governe minhas conversas e decisões. Em nome de Jesus, amém.\"\n    }\n  ]\n}",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "O manifesto confirma a configuração de geração e a existência de duas orações: **“misericórdias a cada manhã”** e **“passos ensinados para segunda-feira”**. Ele não contém as mensagens nem os IDs de cinco imagens; os dois textos são orações para áudio.\n\nPara seguir com o pedido original, preciso saber se você quer gerar **imagens, áudios ou ambos**, e quais mensagens devem ser usadas. Se forem cinco, o catálogo `src/lib/messages.ts` precisa ser consultado para escolher IDs e conteúdo. A configuração já define voz feminina suave e música de fundo para os áudios."
     }
   ]
 }
