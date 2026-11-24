@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-24T16:57:22.123Z",
+  "messages": [
+    {
+      "role": "user",
+      "text": "olá, o que vc precisa para continuarmos atualizando meu app Luz da Manhã ?",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Olá! Para continuarmos, me diga o que você quer atualizar no app Luz da Manhã — por exemplo, uma tela, uma funcionalidade ou o visual. Se já tiver uma ideia ou algo que não está funcionando, pode descrever aqui.\n\nAinda não consultei os arquivos do app nesta conversa."
+    }
+  ]
+}
