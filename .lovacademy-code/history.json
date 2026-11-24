@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T19:54:30.174Z",
+  "updated_at": "2026-11-24T19:54:58.536Z",
   "messages": [
     {
       "role": "user",
@@ -100,6 +100,15 @@
     {
       "role": "assistant",
       "text": "Recebi o script de renderização. Ele busca uma oração pelo `key` no manifesto, gera o áudio de voz pura com as configurações de síntese e depois chama `mix-prayer.py` para criar a versão com música.\n\nPara montar as cinco imagens com orações coerentes, posso escolher cenas variadas de Bom Dia. Ainda preciso de uma referência visual do app para reproduzir o padrão das imagens; o script de áudio, por si só, não mostra esse padrão."
+    },
+    {
+      "role": "user",
+      "text": "3. Código do Mapeamento de Orações (src/lib/prayers.ts)",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "O `src/lib/prayers.ts` já está no contexto e mostra como o app associa cada oração ao ID da mensagem: ele procura arquivos `.mp3.asset.json` em `src/assets/oracoes/` e usa o nome do arquivo como ID. Se não encontrar uma oração específica, usa a oração geral da manhã.\n\nAssim, para cada nova mensagem de Bom Dia, o arquivo de áudio deve seguir o padrão `src/assets/oracoes/<id-da-mensagem>.mp3.asset.json`. Não é necessário alterar `prayers.ts` para adicionar esses mapeamentos."
     }
   ]
 }
