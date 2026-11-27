@@ -27,7 +27,7 @@ const benefits = [
   { Icon: BanIcon, text: "Zero anúncios" },
 ];
 
-const CHECKOUT_URL = import.meta.env['VITE_HOTMART_CHECKOUT_URL'] as string | undefined;
+const CHECKOUT_URL = import.meta.env['VITE_KIWIFY_CHECKOUT_URL'] as string | undefined;
 
 function VipOffer() {
   const vip = useVip();
@@ -107,7 +107,7 @@ function VipOffer() {
         )}
 
         <div className="mt-5 grid grid-cols-3 gap-2 text-center text-[13px] leading-[17px] text-ink-muted">
-          <div className="flex flex-col items-center gap-1.5"><ShieldIcon className="text-gold" />Pagamento Seguro Hotmart</div>
+          <div className="flex flex-col items-center gap-1.5"><ShieldIcon className="text-gold" />Pagamento Seguro Kiwify</div>
           <div className="flex flex-col items-center gap-1.5"><BoltIcon className="text-gold" />Acesso Imediato</div>
           <div className="flex flex-col items-center gap-1.5"><CheckCircleIcon className="text-gold" />7 dias de garantia incondicional</div>
         </div>
