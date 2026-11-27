@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T12:26:54.870Z",
+  "updated_at": "2026-11-27T12:26:59.262Z",
   "messages": [
     {
       "role": "user",
@@ -257,6 +257,10 @@
     {
       "role": "assistant",
       "text": "Atualizei a página VIP: o selo agora diz “Pagamento Seguro Kiwify” e o checkout usa `VITE_KIWIFY_CHECKOUT_URL`."
+    },
+    {
+      "role": "assistant",
+      "text": "Alterações aplicadas no GitHub: src/routes/vip.tsx"
     }
   ]
 }
