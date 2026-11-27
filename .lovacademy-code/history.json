@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T12:26:59.262Z",
+  "updated_at": "2026-11-27T14:47:30.881Z",
   "messages": [
     {
       "role": "user",
@@ -261,6 +261,15 @@
     {
       "role": "assistant",
       "text": "Alterações aplicadas no GitHub: src/routes/vip.tsx"
+    },
+    {
+      "role": "user",
+      "text": "INSERT INTO public.vip_members (email, active, transaction, product_id, last_event, updated_at)\nVALUES (\n  'luzdamanha1975@gmail.com',  -- substitua pelo seu e-mail se for outro\n  true,\n  'acesso-administrador',\n  'admin-manual',\n  'admin_grant',\n  NOW()\n)\nON CONFLICT (email) DO UPDATE \nSET \n  active = true, \n  last_event = 'admin_grant', \n  updated_at = NOW();",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Esse comando concede ou reativa acesso VIP para `luzdamanha1975@gmail.com`. Ele atualiza `active`, `last_event` e `updated_at` se já existir um registro para esse e-mail.\n\nNão executei o comando nem alterei dados."
     }
   ]
 }
