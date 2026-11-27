@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T15:10:55.911Z",
+  "updated_at": "2026-11-27T15:11:18.590Z",
   "messages": [
     {
       "role": "user",
@@ -360,6 +360,15 @@
     {
       "role": "assistant",
       "text": "A lista inclui as duas novas imagens. Para funcionar, `golden_mistAsset` e `mountain_gloryAsset` precisam estar importadas no mesmo arquivo, e os arquivos `.asset.json` correspondentes precisam existir em `src/assets`."
+    },
+    {
+      "role": "user",
+      "text": "\"bom-dia\": [\n    {verse:\"De manhã ouves a minha voz, ó Senhor; de manhã te apresento a minha oração e fico esperando.\",reference:\"Salmos 5:3\"},\n    {verse:\"Sacia-nos de manhã com a tua benignidade, para que nos regozijemos e nos alegremos todos os nossos dias.\",reference:\"Salmos 90:14\"},\n    {verse:\"Faze-me ouvir a tua benignidade pela manhã, pois em ti confio.\",reference:\"Salmos 143:8\"},\n    {verse:\"Quando acordo, ainda estou contigo.\",reference:\"Salmos 139:18\"},\n    {verse:\"O Senhor Deus me deu língua de erudito, para que eu saiba dizer a seu tempo uma boa palavra ao cansado. Ele desperta-me todas as manhãs.\",reference:\"Isaías 50:4\"},\n    {verse:\"O choro pode durar uma noite, mas a alegria vem pela manhã.\",reference:\"Salmos 30:5\"},\n    {verse:\"Este é o dia que fez o Senhor; regozijemo-nos e alegremo-nos nele.\",reference:\"Salmos 118:24\"},\n    {verse:\"Tudo posso naquele que me fortalece.\",reference:\"Filipenses 4:13\"},\n    {verse:\"De manhã canto a tua força e celebro a tua misericórdia, pois és o meu alto refúgio.\",reference:\"Salmos 59:16\"},\n    {verse:\"Levanta-te, resplandece, porque vem a tua luz, e a glória do Senhor vai nascendo sobre ti.\",reference:\"Isaías 60:1\"},\n    {verse:\"A vereda dos justos é como a luz da aurora, que vai brilhando mais e mais até ser dia perfeito.\",reference:\"Provérbios 4:18\"},\n    {verse:\"Deus está no meio dela; não será abalada. Deus a ajudará ao romper da manhã.\",reference:\"Salmos 46:5\"},\n    // Novos versículos exclusivos adicionados:\n    {verse:\"Antecipei-me à alvorada e clamei; esperei na tua palavra.\",reference:\"Salmos 119:147\"},\n    {verse:\"Senhor, tem misericórdia de nós; por ti temos esperado. Sê tu o nosso braço a cada manhã, como salvação no tempo de angústia.\",reference:\"Isaías 33:2\"},\n  ],",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Esse trecho acrescenta dois versículos à categoria `\"bom-dia\"`. Ainda não consultei os arquivos do repositório, então não posso confirmar se essa lista existe nesse formato ou se as referências já aparecem em outras categorias."
     }
   ]
 }
