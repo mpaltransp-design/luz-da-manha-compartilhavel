@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T20:15:07.664Z",
+  "updated_at": "2026-11-27T12:26:54.870Z",
   "messages": [
     {
       "role": "user",
@@ -248,6 +248,15 @@
     {
       "role": "assistant",
       "text": "Alterações aplicadas no GitHub: src/lib/photos.ts"
+    },
+    {
+      "role": "user",
+      "text": "“Atualize a página de VIP (/vip.tsx): troque o texto ‘Pagamento Seguro Hotmart’ por ‘Pagamento Seguro Kiwify’. Troque a variável de ambiente VITE_HOTMART_CHECKOUT_URL por VITE_KIWIFY_CHECKOUT_URL. Confirme que as alterações foram aplicadas.”",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Atualizei a página VIP: o selo agora diz “Pagamento Seguro Kiwify” e o checkout usa `VITE_KIWIFY_CHECKOUT_URL`."
     }
   ]
 }
